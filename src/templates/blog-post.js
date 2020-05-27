@@ -10,7 +10,7 @@ import { DiscussionEmbed } from "disqus-react"
 
 class BlogPostTemplate extends React.Component {
   render() {
-    console.log(process.env.GATSBY_DISQUS_NAME, 'process env')
+    // console.log(process.env.GATSBY_DISQUS_NAME, 'process env')
     const post = this.props.data.mdx
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext

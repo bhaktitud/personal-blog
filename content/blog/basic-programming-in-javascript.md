@@ -1,0 +1,80 @@
+---
+path: basic-programming-in-javascript
+date: 2020-05-27T15:28:55.556Z
+title: Basic Programming in Javascript
+description: Step-by-step to guide you to learn the fundamental of Javascript
+---
+Hi, if you are reading this article, it means that most likely you are people who are just want to start learning programming using Javascript. In this article, I will provide some references for you to read about the basic concepts of what you must understand to dive into Javascript programming.
+
+Here are the list of Javascript Fundamental references that you might want to read and learn,
+
+#### \> Variables + Scoping
+
+[Declaring JavaScript Variables: var, let and const](https://scotch.io/courses/10-need-to-know-javascript-concepts/declaring-javascript-variables-var-let-and-const)
+
+[ES6 let VS const variables](https://wesbos.com/let-vs-const/)
+
+[The Difference Between Function And Block Scope In JavaScript](https://medium.com/@josephcardillo/the-difference-between-function-and-block-scope-in-javascript-4296b2322abe)
+
+#### \> Types
+
+[Intro to JavaScript, Lesson 1: Data types & variables](https://www.udacity.com/course/intro-to-javascript--ud803)
+
+[Understanding Data Types in JavaScript](https://www.digitalocean.com/community/tutorials/understanding-data-types-in-javascript)
+
+#### \> Objects
+
+[Intro To Web Development: Objects](https://btholt.github.io/intro-to-web-dev-v2/objects-and-arrays)
+
+[You Don't Know JS: Objects and Classes](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/objects-classes/ch3.md)
+[Reference vs. Copy](https://www.youtube.com/watch?v=YnfwDQ5XYF4)
+
+#### \> Functions
+
+[Write Reusable JavaScript with Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/write-reusable-javascript-with-functions)
+
+[Intro To Web Development: Functions & Scope](https://btholt.github.io/intro-to-web-dev-v2/functions-and-scope)
+
+[Arrow Functions](https://wesbos.com/arrow-functions/)
+
+[How To Use Object Methods In JavaScript](https://www.digitalocean.com/community/tutorials/how-to-use-object-methods-in-javascript)
+
+#### \> The DOM
+
+[What exactly is the DOM?](https://dev.to/karaluton/what-exactly-is-the-dom-jhg)
+
+[Eloquent JavaScript, Chapter 14: The Dom](https://eloquentjavascript.net/14_dom.html)
+
+#### \> Prototypes + this
+
+[A Beginner's Guide to JavaScript's Prototype](https://tylermcginnis.com/beginners-guide-to-javascript-prototype/)\
+\
+[Understanding This, Bind, Call, and Apply in JavaScript](https://www.taniarascia.com/this-bind-call-apply-javascript/)
+
+#### \> Events
+
+[Callback Functions](https://guide.freecodecamp.org/javascript/callback-functions/)
+
+[What the heck is the event loop anyways?](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+
+[Bubbling and Capturing](https://javascript.info/bubbling-and-capturing)
+
+#### \> Arrays
+
+[JavaScript Array and Object Methods to make you a better developer](https://syntax.fm/show/043/20-javascript-array-and-object-methods-to-make-you-a-better-developer)
+
+[10 JavaScript array methods you should know](https://dev.to/frugencefidel/10-javascript-array-methods-you-should-know-4lk3)
+
+#### \> Flow control
+
+[Learn JavaScript: Loops](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-loops)
+
+[For Loops](https://www.youtube.com/watch?v=24Wpg6njlYI)
+
+> [Async JavaScript: From Callbacks, to Promises, to Async/Await.](https://tylermcginnis.com/async-javascript-from-callbacks-to-promises-to-async-await/)
+>
+> *This article by Tyler McGinnes is the best article on async JS I've ever read.*
+
+[Intro To Web Development: Control Flow](https://btholt.github.io/intro-to-web-dev-v2/programming-fundamentals)
+
+source: <https://www.freecodecamp.org/news/30-free-resources-for-learning-javascript-fundamentals/>

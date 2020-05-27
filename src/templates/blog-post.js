@@ -15,7 +15,7 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
     const disqusConfig = {
       shortname: process.env.GATSBY_DISQUS_NAME,
-      config: { identifier: slug, title },
+      config: { identifier: `${this.props.location.pathname}`, title: post.frontmatter.title },
     }
 
     return (

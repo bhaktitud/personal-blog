@@ -51,6 +51,6 @@ if(name == "Andy"){
 }
 ```
 
-notice that the "else" condition will not be executed because the first condition is already fulfilled. You can also compare **Number**, **Bollean** or even a **Character**!.
+notice that the "else" condition will not be executed because the first condition is already fulfilled. You can also compare **Number**, **Boolean** or even a **Character**!.
 
 That is all, Explore and go dive into it and try with another case to make yourself more comfortable with the code!. Happy Coding :)

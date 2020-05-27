@@ -4,7 +4,7 @@ date: 2020-05-27T15:37:57.607Z
 title: For Statement
 description: A brief introduction to for statement in javascript
 ---
-Hi, in this article we will talk about ***for statement*** in **Javascript**. According to the documentation, "*a **for** loop repeats until specified condition evaluates to **false***", *\-developer.mozilla.org*.
+Hi, in this article we will talk about ***for statement*** in **Javascript**. According to the documentation, "a **for** loop repeats until specified condition evaluates to **false**", *\-developer.mozilla.org*.
 
 the code structure of for statement looks like this,
 
@@ -21,8 +21,6 @@ for ([initialExpression]; [condition]; [incrementExpression]){
 
 Often we use the for loop statement to handle ***Array*** or ***String*** data so we can access the index of a value easily and process the value. as an example see the code snippet below,
 
-
-
 ```javascript
 let numbers = [1,2,3,4,5]
 let result = 0
@@ -32,8 +30,6 @@ for(let i = 0; i < numbers.length; i++){
 console.log(result)
 ```
 
-
-
 ```javascript
 Output:
 15
@@ -41,14 +37,10 @@ Output:
 
 Supposed we have a list of numbers represented as variable ***numbers*** (Array), and a variable ***result*** where we want to store the summation of the numbers. In the for statement used above, we define the initialExpression as **i = 0**, the condition is **i** should less than the ***length*** of ***array numbers***, and we **increase** the value of **i** on each iteration by 1. Remember that the loop will be stop when the current **condition** is ***false***.
 
-
-
 ```javascript
 esult += numbers[i] is similar to result = result + numbers[i]
 // You can use each one of them, the result should be the same.
 ```
-
-
 
 ```javascript
 numbers[i] is a way we access the value of an array. In this case, 

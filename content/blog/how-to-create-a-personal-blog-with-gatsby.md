@@ -19,6 +19,8 @@ Pre-requisite:
 * Github Account
 * [Gatsby CLI ](https://www.gatsbyjs.org/tutorial/part-zero/#using-the-gatsby-cli)installed
 
+
+
 ### **Step 1**
 
 Run the Gatsby CLI command on your terminal to create a new Gatsby site based on [Gatsby Personal Starter Blog](https://github.com/thomaswang/gatsby-personal-starter-blog).

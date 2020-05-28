@@ -53,6 +53,19 @@ class Layout extends React.Component {
         </h3>
       )
     }
+
+    const toGatsby = () => {
+      window.open('https://www.gatsbyjs.org', '_blank');
+    }
+
+    const toGithub =() => {
+      window.open('https://www.github.com/bhaktitud', '_blank');
+    }
+
+    const toNetlify = () => {
+      window.open('https://www.netlify.com', '_blank');
+    }
+
     return (
       <Wrapper>
         <div
@@ -65,12 +78,26 @@ class Layout extends React.Component {
         >
           <header>{header}</header>
           <main>{children}</main>
+          <br></br>
+          <hr></hr>
+          <Footer
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              marginTop: 0,
+              padding: 0
+            }}
+          >
+            <h6>Bhakti Budiman Novanda</h6>
+            <div style={{display: 'flex', alignItems: 'center', flexDirection: 'row'}}>
+                <img style={{marginRight: 10, marginBottom: 0}} src="https://firebasestorage.googleapis.com/v0/b/cloudstore-4cb34.appspot.com/o/logo-gatsby-icon.png?alt=media&token=bb166c75-0d2f-4eb5-aa4e-1ff209a21bc1" alt="gatsby" width="32" onClick={() => toGatsby()}></img>
+                <img style={{marginRight: 10, marginBottom: 0}} src="https://firebasestorage.googleapis.com/v0/b/cloudstore-4cb34.appspot.com/o/icons8-github-64.png?alt=media&token=2d42a276-f5b1-4ed2-b62b-97282a2376bf-github-64.png" alt="github" width="32" onClick={() => toGithub()}></img>
+                <img style={{marginRight: 10, marginBottom: 0}} src="https://firebasestorage.googleapis.com/v0/b/cloudstore-4cb34.appspot.com/o/netlify-logo-png-transparent.png?alt=media&token=dbd3de58-cd40-48d9-80e2-0e2320e0c9d9-logo-png-transparent.png" alt="netlify" width="32" onClick={() => toNetlify()}></img>
+            </div>
+          </Footer>
         </div>
-        <Footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </Footer>
       </Wrapper>
     )
   }

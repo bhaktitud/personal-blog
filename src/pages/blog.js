@@ -27,12 +27,15 @@ class Blog extends React.Component {
                     marginBottom: rhythm(1 / 4),
                   }}
                 >
-                  <Link
-                    style={{ boxShadow: `none` }}
-                    to={`blog${node.fields.slug}`}
-                  >
-                    {title}
-                  </Link>
+                  <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+                    <img style={{marginRight: 10, padding: 0, marginBottom: 0}} src="https://img.icons8.com/carbon-copy/100/000000/book.png" alt="book" width='48'/>
+                    <Link
+                      style={{ boxShadow: `none` }}
+                      to={`blog${node.fields.slug}`}
+                    >
+                      {title}
+                    </Link>
+                  </div>
                 </h3>
                 <small>{node.frontmatter.date}</small>
                 <p

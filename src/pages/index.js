@@ -9,6 +9,23 @@ class IndexPage extends React.Component {
   render() {
     const siteTitle = "CodeJam"
 
+    const toLinkedIn = () => {
+      window.open('https://www.linkedin.com/in/bhaktibudimannovanda', '_blank');
+    }
+
+    const toGithub =() => {
+      window.open('https://www.github.com/bhaktitud', '_blank');
+    }
+
+    const toFacebook = () => {
+      window.open('https://www.facebook.com/bhakti.fg', '_blank');
+    }
+
+    const toTwitter = () => {
+      window.open('https://www.twitter.com/BhaktiNMF', '_blank');
+    }
+
+
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -43,7 +60,8 @@ class IndexPage extends React.Component {
               display: `flex`,
               flexDirection: `column`,
               alignItems: `center`,
-              marginLeft: 10
+              marginLeft: 10,
+              marginTop: '15%'
             }}
           >
             <div
@@ -82,18 +100,10 @@ class IndexPage extends React.Component {
                   justifyContent: `center`
                 }}
               >
-                <a style={{textDecoration: `none`}} href="https://www.linkedin.com/in/bhaktibudimannovanda">
-                  <img src="https://img.icons8.com/ios-glyphs/40/000000/linkedin.png" alt='linkedin' />
-                </a>
-                <a style={{textDecoration: `none`}} href="https://www.facebook.com/bhakti.fg">
-                  <img src="https://img.icons8.com/ios-glyphs/40/000000/facebook.png" alt='facebook' />
-                </a>
-                <a style={{textDecoration: `none`}} href="https://www.twitter.com/BhaktiNMF">
-                  <img src="https://img.icons8.com/ios-glyphs/40/000000/twitter.png" alt='twitter' />
-                </a>
-                <a style={{textDecoration: `none`}} href="https://www.github.com/bhaktitud">
-                  <img src="https://img.icons8.com/ios-glyphs/40/000000/github.png" alt='github' />
-                </a>
+                <img src="https://img.icons8.com/ios-glyphs/40/000000/linkedin.png" alt='linkedin' onClick={() => toLinkedIn()} />
+                <img src="https://img.icons8.com/ios-glyphs/40/000000/facebook.png" alt='facebook' onClick={() => toFacebook()} />
+                <img src="https://img.icons8.com/ios-glyphs/40/000000/twitter.png" alt='twitter' onClick={() => toTwitter()} />
+                <img src="https://img.icons8.com/ios-glyphs/40/000000/github.png" alt='github' onClick={() => toGithub()} />
               </div>
             </div>
           </div>

@@ -38,7 +38,7 @@ Output:
 Supposed we have a list of numbers represented as variable ***numbers*** (Array), and a variable ***result*** where we want to store the summation of the numbers. In the for statement used above, we define the initialExpression as **i = 0**, the condition is **i** should less than the ***length*** of ***array numbers***, and we **increase** the value of **i** on each iteration by 1. Remember that the loop will be stop when the current **condition** is ***false***.
 
 ```javascript
-esult += numbers[i] is similar to result = result + numbers[i]
+result += numbers[i] is similar to result = result + numbers[i]
 // You can use each one of them, the result should be the same.
 ```
 

@@ -46,9 +46,9 @@ class Blog extends React.Component {
                   </div>
                 </h3>
                 <div style={{marginLeft: 20}}>
-                <small>{node.frontmatter.date},  tags: {!node.frontmatter.tags? 'no tags': node.frontmatter.tags.map((tag, index) => (
+                <small>{node.frontmatter.date} | Tags: {!node.frontmatter.tags? 'no tags': node.frontmatter.tags.map((tag, index) => (
                   <span key={index} className='tag'>
-                    <small>{tag}</small>{', '}
+                    {tag}{' '}
                   </span>
                 ))} </small>
                   <p

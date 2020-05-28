@@ -3,22 +3,22 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 import { rhythm, scale } from "../utils/typography"
+import Navigation from './navigation'
 
 class Layout extends React.Component {
   
   toGatsby = () => {
     window.open('https://www.gatsbyjs.org', '_blank');
   }
-
   
   toGithub =() => {
     window.open('https://www.github.com/bhaktitud', '_blank');
   }
 
-  
   toNetlify = () => {
     window.open('https://www.netlify.com', '_blank');
   }
+
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
@@ -27,44 +27,70 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath || location.pathname === blogPath) {
       header = (
-        <h1
+        <div
           style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between'
           }}
         >
-          <Link
+          <h1
             style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
+              ...scale(1.5),
+              marginBottom: rhythm(1.5),
+              marginTop: 0,
             }}
-            to={location.pathname === blogPath ? `/blog/` : `/`}
           >
-            {title}
-          </Link>
-        </h1>
+            <Link
+              style={{
+                boxShadow: `none`,
+                textDecoration: `none`,
+                color: `inherit`,
+              }}
+              to={location.pathname === blogPath ? `/blog/` : `/`}
+            >
+              {title}
+              <h6
+                style={{
+                  marginTop: 0,
+                  paddingLeft: 10
+                }}
+              >"Code for your life!"</h6>
+            </Link>
+          </h1>
+          <Navigation />
+        </div>
       )
     } else {
       header = (
-        <h3
+        <div
           style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between'
           }}
         >
-          <Link
+          <h3
             style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
+              fontFamily: `Montserrat, sans-serif`,
+              marginTop: 0,
             }}
-            to={`/blog/`}
           >
-            {title}
-          </Link>
-        </h3>
+            <Link
+              style={{
+                boxShadow: `none`,
+                textDecoration: `none`,
+                color: `inherit`,
+              }}
+              to={`/blog/`}
+            >
+              {title}
+            </Link>
+          </h3>
+          <Navigation />
+        </div>
       )
     }
 

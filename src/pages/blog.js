@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Bio from '../components/bio'
 import { rhythm } from "../utils/typography"
 
 class Blog extends React.Component {
@@ -15,9 +16,9 @@ class Blog extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        {/* <Bio /> */}
-        <h2>All Posts</h2>
+        <Bio />
         <hr />
+        <h2>All Posts</h2>
         <div style={{ margin: "50px 0 40px" }}>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
@@ -25,9 +26,8 @@ class Blog extends React.Component {
               <div 
                 className='card' key={node.fields.slug} 
                 style={{ 
-                  marginBottom: 40, 
+                  marginBottom: 20, 
                   borderRadius: 5,
-                  boxShadow: `2px 2px 10px 5px #aaaacc`,
                 }}
               >
                 <h3

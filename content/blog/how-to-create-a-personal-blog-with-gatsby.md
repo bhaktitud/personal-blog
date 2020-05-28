@@ -8,16 +8,16 @@ Hi, in this article we will create a personal blog by using Gatsby.js and Netlif
 
 Requirement knowledge:
 
-1. [React.js ](https://reactjs.org/)
-2. [GraphQL](https://graphql.org/)
-3. [Git Command](https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf)
+* [React.js ](https://reactjs.org/)
+* [GraphQL](https://graphql.org/)
+* [Git Command](https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf)
 
 Therefore, if you feel comfortable with all of that you can then continue to the next step.
 
 Pre-requisite:
 
-1. Github Accountga
-2. [Gatsby CLI ](https://www.gatsbyjs.org/tutorial/part-zero/#using-the-gatsby-cli)installed
+* Github Accountga
+* [Gatsby CLI ](https://www.gatsbyjs.org/tutorial/part-zero/#using-the-gatsby-cli)installed
 
 ### **Step 1**
 

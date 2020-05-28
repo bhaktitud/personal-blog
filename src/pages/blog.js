@@ -46,7 +46,11 @@ class Blog extends React.Component {
                   </div>
                 </h3>
                 <div style={{marginLeft: 20}}>
-                  <small>{node.frontmatter.date}</small>
+                <small>{node.frontmatter.date},  tags: {!node.frontmatter.tags? 'no tags': node.frontmatter.tags.map((tag, index) => (
+                  <span key={index} className='tag'>
+                    <small>{tag}</small>{', '}
+                  </span>
+                ))} </small>
                   <p
                     dangerouslySetInnerHTML={{
                       __html: node.frontmatter.description || node.excerpt,
@@ -85,6 +89,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            tags
           }
         }
       }

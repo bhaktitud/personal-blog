@@ -36,7 +36,7 @@ function Bio() {
             <p>
               Written by <strong>{author}</strong> who lives and works in Indonesia building and writing useful things.
               {` `}
-              If you are interested to my contents, please consider supporting me by donation ...
+              If you are interested to my contents, please consider supporting me by donation at <a href="https://ko-fi.com/bhaktinovanda"> Ko-Fi </a>
             </p>
           </Container>
         )

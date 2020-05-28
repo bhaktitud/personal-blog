@@ -41,11 +41,11 @@ class About extends React.Component {
                                 marginLeft: 35
                             }}
                         >
-                            <li>Work as Web Developer (primarily React, Redux, Node, Express)</li>
-                            <li>Has double degree in civil engineering and information system</li>
-                            <li>Loves multiplayer online games</li>
-                            <li>Can play guitar</li>
-                            <li>Love Gatsby so much :)</li>
+                            <li><img src="https://img.icons8.com/cute-clipart/64/000000/web.png" alt='web' width='32' /> Work as Web Developer (primarily React, Redux, Node, Express)</li>
+                            <li><img src="https://img.icons8.com/ios-glyphs/80/000000/flying-motarboard.png" alt='degree' width='32' /> Has double degree in civil engineering and information system</li>
+                            <li><img src="https://img.icons8.com/cute-clipart/64/000000/controller.png" alt='game' width='32' /> Loves multiplayer online games</li>
+                            <li><img src="https://img.icons8.com/cute-clipart/64/000000/guitar.png" alt='guitar' width='32' /> Can play guitar</li>
+                            <li><img src="https://img.icons8.com/cotton/64/000000/laptop-coding.png" alt='coding' width='32' /> Love Gatsby so much :)</li>
                         </ul>
                     </div>
                     <hr />

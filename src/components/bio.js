@@ -36,6 +36,7 @@ function Bio() {
             <p>
               Written by <strong>{author}</strong> who lives and works in Indonesia building and writing useful things.
               {` `}
+              If you are interested to my contents, please consider supporting me by donation ...
             </p>
           </Container>
         )

@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
+import GitHubButton from 'react-github-btn'
 
 class IndexPage extends React.Component {
   render() {
@@ -11,10 +12,6 @@ class IndexPage extends React.Component {
 
     const toLinkedIn = () => {
       window.open('https://www.linkedin.com/in/bhaktibudimannovanda', '_blank');
-    }
-
-    const toGithub =() => {
-      window.open('https://www.github.com/bhaktitud', '_blank');
     }
 
     const toFacebook = () => {
@@ -37,7 +34,7 @@ class IndexPage extends React.Component {
             display: `flex`,
             flexDirection: 'row',
             alignItems: `center`,
-            justifyContent: `space-between`
+            justifyContent: `space-between`,
           }}
         >
           <div>
@@ -50,6 +47,7 @@ class IndexPage extends React.Component {
             <p>
               I am a full stack developer, currently love to write and share my knowledge to the open world!
             </p>
+            <GitHubButton href="https://github.com/bhaktitud" data-show-count="true" aria-label="Follow @bhaktitud on GitHub">Follow @bhaktitud</GitHubButton>
           </div>
           <div
             style={{
@@ -103,7 +101,6 @@ class IndexPage extends React.Component {
                 <img src="https://img.icons8.com/ios-glyphs/40/000000/linkedin.png" alt='linkedin' onClick={() => toLinkedIn()} />
                 <img src="https://img.icons8.com/ios-glyphs/40/000000/facebook.png" alt='facebook' onClick={() => toFacebook()} />
                 <img src="https://img.icons8.com/ios-glyphs/40/000000/twitter.png" alt='twitter' onClick={() => toTwitter()} />
-                <img src="https://img.icons8.com/ios-glyphs/40/000000/github.png" alt='github' onClick={() => toGithub()} />
               </div>
             </div>
           </div>

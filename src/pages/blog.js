@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
@@ -10,17 +9,27 @@ class Blog extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
+    const author = data.site.siteMetadata.author
     const posts = data.allMdx.edges
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        <Bio />
-        <div style={{ margin: "20px 0 40px" }}>
+        {/* <Bio /> */}
+        <h2>All Posts</h2>
+        <hr />
+        <div style={{ margin: "50px 0 40px" }}>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
-              <div key={node.fields.slug}>
+              <div 
+                className='card' key={node.fields.slug} 
+                style={{ 
+                  marginBottom: 40, 
+                  borderRadius: 5,
+                  boxShadow: `2px 2px 10px 5px #aaaacc`,
+                }}
+              >
                 <h3
                   style={{
                     marginBottom: rhythm(1 / 4),
@@ -36,16 +45,20 @@ class Blog extends React.Component {
                     </Link>
                   </div>
                 </h3>
-                <small>{node.frontmatter.date}</small>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
+                <div style={{marginLeft: 20}}>
+                  <small>{node.frontmatter.date}</small>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: node.frontmatter.description || node.excerpt,
+                    }}
+                  />
+                  <small>Author: <strong>{author}</strong></small>
+                </div>
               </div>
             )
           })}
         </div>
+        <hr />
       </Layout>
     )
   }
@@ -58,6 +71,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        author
       }
     }
     allMdx(sort: { fields: [frontmatter___date], order: DESC }) {

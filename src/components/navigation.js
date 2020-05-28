@@ -1,35 +1,40 @@
 import React from 'react'
+import { Nav } from 'react-bootstrap'
 import { Link } from 'gatsby'
 
 function Navigation() {
     return (
-        <ul
+        <Nav
+        justify
         style={{
             display: 'flex',
-            flexDirection: 'row'
+            flexDirection: 'row',
+            fontSize: 15,
+            border: '0.5px solid black',
+            borderRadius: 5
         }}
         >
-            <li style={{textDecoration: 'none', listStyle:'none', marginRight: 5}}>
-                <Link to='/'>
+            <Nav.Item>
+                <Link className='nav-link' to='/'>
                 Home
                 </Link>
-            </li>
-            <li style={{textDecoration: 'none', listStyle:'none', marginRight: 5}}>
-                <Link to='/blog/'>
+            </Nav.Item>
+            <Nav.Item>
+                <Link className='nav-link' to='/blog/'>
                 Articles
                 </Link>
-            </li>
-            <li style={{textDecoration: 'none', listStyle:'none', marginRight: 5}}>
-                <Link to='/about'>
+            </Nav.Item>
+            <Nav.Item>
+                <Link className='nav-link' to='/about'>
                 About
                 </Link>
-            </li>
-            <li style={{textDecoration: 'none', listStyle:'none', marginRight: 5}}>
-                <Link to='/contact'>
+            </Nav.Item>
+            {/* <Nav.Item>
+                <Link className='nav-link' to='/contact'>
                 Contact
                 </Link>
-            </li>
-        </ul>
+            </Nav.Item> */}
+        </Nav>
 
     )
 }

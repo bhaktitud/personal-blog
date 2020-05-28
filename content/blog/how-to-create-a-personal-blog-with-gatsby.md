@@ -78,6 +78,6 @@ gatsby develop
 
 You can check the site locally on `localhost:8000` and to open the Netlify CMS you can check it on `localhost:8000/admin`
 
-Congratulations!, you are ready to share your knowledge on your newle created personal blog, or you can share anything you want. You can also explore CSS framework to make your site even better. 
+Congratulations!, you are ready to share your knowledge on your newly created personal blog, or you can share anything you want. You can also explore CSS framework to make your site even better. 
 
 Don't forget to check out the [Gatsby Docs](https://www.gatsbyjs.org/) for more detail.

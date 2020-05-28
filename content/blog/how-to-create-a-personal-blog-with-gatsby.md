@@ -16,7 +16,7 @@ Therefore, if you feel comfortable with all of that you can then continue to the
 
 Pre-requisite:
 
-* Github Accountga
+* Github Account
 * [Gatsby CLI ](https://www.gatsbyjs.org/tutorial/part-zero/#using-the-gatsby-cli)installed
 
 ### **Step 1**

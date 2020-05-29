@@ -7,7 +7,13 @@ import { rhythm, scale } from "../utils/typography"
 function Navigation() {
     return (
         <nav className="navbar navbar-expand-md navbar-light bg-white">
-            <div className="mx-auto order-0">
+            <div className="mx-auto order-0" 
+                style={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    justifyContent: 'space-between'
+                }}
+            >
                 <div
                     style={{
                         display: 'flex',
@@ -27,11 +33,11 @@ function Navigation() {
                     </h3>
                     <small style={{marginLeft: '2%'}}>"Code for your life!"</small>
                 </div>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            </div>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationCollection">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-            </div>
-            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <div className="navbar-collapse collapse w-100 order-3" id='navigationCollection'>
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
                         <Link style={{boxShadow: 'none'}} className="nav-link" to="/blog/">Articles</Link>

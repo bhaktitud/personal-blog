@@ -22,15 +22,12 @@ class About extends React.Component {
                             method="POST" 
                             data-netlify="true"
                             netlify-honeypot="bot-field"
-                            data-netlify-recaptcha="true"
                             style={{
                                 display: 'flex',
                                 flexDirection: 'column' 
                             }}
                         >
 
-
-                            <input type="hidden" name="form-name" value="contact-user" />
                             <label for="fname">First Name</label>
                             <input type="text" id="fname" name="firstname" placeholder="Your name.." />
 
@@ -43,7 +40,6 @@ class About extends React.Component {
                             <label for="subject">Subject</label>
                             <textarea id="subject" name="subject" placeholder="Write something.." style={{height:"200px"}}></textarea>
                             
-                            <div data-netlify-recaptcha="true"></div>
                             <button className="btn btn-primary" type="submit">Submit</button>
                         </form>
                 </div>

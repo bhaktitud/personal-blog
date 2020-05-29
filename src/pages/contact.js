@@ -16,8 +16,7 @@ class About extends React.Component {
                 >
                         <form
                             name="contact"
-                            method="post" 
-                            netlify-honeypot="bot-field" 
+                            method="POST" 
                             data-netlify="true"
                             style={{
                                 display: 'flex',
@@ -29,6 +28,9 @@ class About extends React.Component {
 
                             <label for="lname">Last Name</label>
                             <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+                            
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email address.." />
 
                             <label for="country">Country</label>
                             <select id="country" name="country">
@@ -41,7 +43,7 @@ class About extends React.Component {
                             <label for="subject">Subject</label>
                             <textarea id="subject" name="subject" placeholder="Write something.." style={{height:"200px"}}></textarea>
 
-                            <button className="btn btn-primary">Submit</button>
+                            <button className="btn btn-primary" type="submit">Submit</button>
                         </form>
 
                 </div>

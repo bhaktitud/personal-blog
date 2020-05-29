@@ -21,6 +21,8 @@ class About extends React.Component {
                             name="contact-user"
                             method="POST" 
                             data-netlify="true"
+                            netlify-honeypot="bot-field"
+                            data-netlify-recaptcha="true"
                             style={{
                                 display: 'flex',
                                 flexDirection: 'column' 
@@ -38,6 +40,7 @@ class About extends React.Component {
                             <label for="subject">Subject</label>
                             <textarea id="subject" name="subject" placeholder="Write something.." style={{height:"200px"}}></textarea>
                             
+                            <div data-netlify-recaptcha="true"></div>
                             <button className="btn btn-primary" type="submit">Submit</button>
                         </form>
                 </div>

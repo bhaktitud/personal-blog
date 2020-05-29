@@ -46,7 +46,7 @@ class About extends React.Component {
                             <button className="btn btn-primary" type="submit">Submit</button>
                         </form> */}
                         <form 
-                            name="contact" 
+                            name="contact-user" 
                             method="POST" 
                             data-netlify="true" 
                             style={{

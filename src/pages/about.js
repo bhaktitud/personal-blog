@@ -10,7 +10,7 @@ class About extends React.Component {
         return(
             <Layout location={this.props.location} title={siteTitle}>
                 <div
-                    style={{ margin: "50px 0 40px" }}
+                    style={{ margin: "20px 0 40px" }}
                 >
                     <h3><strong>About Me</strong></h3>
                     <div

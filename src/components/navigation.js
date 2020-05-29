@@ -8,16 +8,25 @@ function Navigation() {
     return (
         <nav className="navbar navbar-expand-md navbar-light bg-white">
             <div className="mx-auto order-0">
-                <h3
+                <div
                     style={{
-                        ...scale(1),
+                        display: 'flex',
+                        flexDirection: 'column',
                         marginBottom: rhythm(1.5),
-                        marginTop: 0,
-                        width: '150%'
                     }}
-                >   
-                    <Link style={{textDecoration: 'inherit', color: 'inherit', boxShadow: 'none'}} className="mx-auto" to="/">CodeJam</Link>
-                </h3>
+                >
+                    <h3
+                        style={{
+                            ...scale(1),
+                            marginTop: 0,
+                            marginBottom: 0,
+                            width: '150%'
+                        }}
+                    >   
+                        <Link style={{textDecoration: 'inherit', color: 'inherit', boxShadow: 'none'}} className="mx-auto" to="/">CodeJam</Link>
+                    </h3>
+                    <small style={{marginLeft: '2%'}}>"Code for your life!"</small>
+                </div>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
                     <span className="navbar-toggler-icon"></span>
                 </button>

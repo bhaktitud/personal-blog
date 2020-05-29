@@ -117,7 +117,7 @@ class IndexPage extends React.Component {
             </div>
           </div>
         </div>
-        <Link to="/blog/">
+        <Link style={{boxShadow: 'none', textDecoration: 'none'}} to="/blog/">
           <Button marginTop="35px">Read Articles</Button>
         </Link>
         <hr />

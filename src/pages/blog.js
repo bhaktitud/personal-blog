@@ -18,13 +18,15 @@ class Blog extends React.Component {
         <SEO title="All posts" />
         <div
           style={{
-            marginTop: '10%'
+            marginTop: '5%'
           }}
         >
           <Bio />
         </div>
         <hr />
-        <h2>All Posts</h2>
+        <div style={{ marginTop: '5%' }}>
+          <h4>All Posts ({posts.length})</h4>
+        </div>
         <div style={{ margin: "50px 0 40px" }}>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
@@ -44,7 +46,7 @@ class Blog extends React.Component {
                   <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
                     <img style={{marginRight: 10, padding: 0, marginBottom: 0}} src="https://img.icons8.com/carbon-copy/100/000000/book.png" alt="book" width='48'/>
                     <Link
-                      style={{ boxShadow: `none` }}
+                      style={{ boxShadow: `none`, textDecoration: `none`, color: 'inherit' }}
                       to={`blog${node.fields.slug}`}
                     >
                       {title}

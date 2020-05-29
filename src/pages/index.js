@@ -46,16 +46,15 @@ class IndexPage extends React.Component {
               width: '100%',
               backgroundColor: 'rgba(155, 155, 155, 0.5)',
               borderRadius: 25,
-              boxShadow: `2px 2px 30px 5px #aaaaaa`,
+              // boxShadow: `2px 2px 30px 5px #aaaaaa`,
               display: `flex`,
               flexDirection: `row`,
               alignItems: `center`,
               justifyContent: `space-evenly`,
-              marginTop: '15%',
               padding: 25
             }}
           >
-            <div
+            {/* <div
               style={{
                 width: '40%',
                 height: '100%',
@@ -75,7 +74,7 @@ class IndexPage extends React.Component {
 
                 }}
               />
-            </div>
+            </div> */}
             <div
             >
               <h1>

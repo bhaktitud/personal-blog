@@ -6,9 +6,13 @@ function FrontEnd() {
             style={{
                 display: 'flex',
                 flexDirection: 'row',
+                justifyContent: 'space-between',
+                marginTop: '10%'
             }}
         >
-            <div>
+            <div
+                style={{marginLeft: '10%'}}
+            >
                 <img src="https://firebasestorage.googleapis.com/v0/b/cloudstore-4cb34.appspot.com/o/PinClipart.com_react-clipart_3857336.png?alt=media&token=9ce6149f-6b39-4493-8a45-1b882aa41a67" alt="react" width="40%"></img>
             </div>
             <div>

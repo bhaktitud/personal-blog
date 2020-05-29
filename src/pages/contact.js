@@ -28,6 +28,9 @@ class About extends React.Component {
                                 flexDirection: 'column' 
                             }}
                         >
+
+
+                            <input type="hidden" name="form-name" value="contact-user" />
                             <label for="fname">First Name</label>
                             <input type="text" id="fname" name="firstname" placeholder="Your name.." />
 

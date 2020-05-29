@@ -5,6 +5,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
 import GitHubButton from 'react-github-btn'
+import BasicProg from '../components/basic-prog'
+import BackEnd from "../components/back-end"
+import FrontEnd from "../components/front-end"
 
 class IndexPage extends React.Component {
   render() {
@@ -32,48 +35,39 @@ class IndexPage extends React.Component {
         <div
           style={{
             display: `flex`,
-            flexDirection: 'row',
+            flexDirection: 'column',
             alignItems: `center`,
             justifyContent: `space-between`,
           }}
         >
-          <div>
-            <h1>
-              Hi! I'm Bhakti{" "}
-              <span role="img" aria-label="wave emoji">
-                👋
-              </span>
-            </h1>
-            <p>
-              I am a full stack developer, currently love to write and share my knowledge to the open world!
-            </p>
-            <GitHubButton href="https://github.com/bhaktitud" data-show-count="true" aria-label="Follow @bhaktitud on GitHub">Follow @bhaktitud</GitHubButton>
-          </div>
+          
           <div
             style={{
-              width: '70%',
-              backgroundColor: 'rgba(138, 132, 226, 0.5)',
+              width: '100%',
+              backgroundColor: 'rgba(155, 155, 155, 0.5)',
               borderRadius: 25,
               boxShadow: `2px 2px 30px 5px #aaaaaa`,
               display: `flex`,
-              flexDirection: `column`,
+              flexDirection: `row`,
               alignItems: `center`,
-              marginLeft: 10,
-              marginTop: '15%'
+              justifyContent: `space-evenly`,
+              marginTop: '15%',
+              padding: 25
             }}
           >
             <div
               style={{
-                width: '100%',
+                width: '40%',
                 height: '100%',
                 display: `flex`,
+                alignItems:'center',
                 justifyContent: `center`,
               }}
             >
               <img src="https://firebasestorage.googleapis.com/v0/b/cloudstore-4cb34.appspot.com/o/images%2F12314343_10205659334662146_8175879808458816792_o.jpg?alt=media&token=fedd7231-1f8e-4490-8063-8dc4166db19c" alt="profile"
                 style={{
                   borderRadius: '10%',
-                  width: '50%',
+                  width: '70%',
                   height: '50%',
                   alignItems: 'center',
                   marginTop: 20,
@@ -83,13 +77,26 @@ class IndexPage extends React.Component {
               />
             </div>
             <div
+            >
+              <h1>
+                Hi! I'm Bhakti{" "}
+                <span role="img" aria-label="wave emoji">
+                  👋
+                </span>
+              </h1>
+              <p>
+                I am a <strong>Software Developer</strong>, currently love to write and share my knowledge to the open world!
+              </p>
+              <GitHubButton href="https://github.com/bhaktitud" data-show-count="true" aria-label="Follow @bhaktitud on GitHub">Follow @bhaktitud</GitHubButton>
+            </div>
+            <div
               style={{
                 display: `flex`,
                 flexDirection: "column",
-                alignItems: `center`
+                alignItems: `center`,
               }}
             >
-                <p>Social Media Connect</p>
+            <p>connect</p>
               <div
                 style={{
                   display: `flex`,
@@ -98,9 +105,9 @@ class IndexPage extends React.Component {
                   justifyContent: `center`
                 }}
               >
-                <img src="https://img.icons8.com/ios-glyphs/40/000000/linkedin.png" alt='linkedin' onClick={() => toLinkedIn()} />
-                <img src="https://img.icons8.com/ios-glyphs/40/000000/facebook.png" alt='facebook' onClick={() => toFacebook()} />
-                <img src="https://img.icons8.com/ios-glyphs/40/000000/twitter.png" alt='twitter' onClick={() => toTwitter()} />
+                <img src="https://img.icons8.com/ios-glyphs/64/000000/linkedin.png" alt='linkedin' onClick={() => toLinkedIn()} />
+                <img src="https://img.icons8.com/ios-glyphs/64/000000/facebook.png" alt='facebook' onClick={() => toFacebook()} />
+                <img src="https://img.icons8.com/ios-glyphs/64/000000/twitter.png" alt='twitter' onClick={() => toTwitter()} />
               </div>
             </div>
           </div>
@@ -108,6 +115,19 @@ class IndexPage extends React.Component {
         <Link to="/blog/">
           <Button marginTop="35px">Read Articles</Button>
         </Link>
+        <hr />
+        <div
+          style={{
+            marginTop: 30,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center'
+          }}
+        >
+          <BasicProg />
+          <BackEnd />
+          <FrontEnd />
+        </div>
       </Layout>
     )
   }

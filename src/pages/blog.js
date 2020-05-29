@@ -16,7 +16,13 @@ class Blog extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        <Bio />
+        <div
+          style={{
+            marginTop: '10%'
+          }}
+        >
+          <Bio />
+        </div>
         <hr />
         <h2>All Posts</h2>
         <div style={{ margin: "50px 0 40px" }}>

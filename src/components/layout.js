@@ -25,74 +25,74 @@ class Layout extends React.Component {
     const blogPath = `${__PATH_PREFIX__}/blog/`
     let header
 
-    if (location.pathname === rootPath || location.pathname === blogPath) {
-      header = (
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'center',
-            justifyContent: 'space-between'
-          }}
-        >
-          <h1
-            style={{
-              ...scale(1.5),
-              marginBottom: rhythm(1.5),
-              marginTop: 0,
-            }}
-          >
-            <Link
-              style={{
-                boxShadow: `none`,
-                textDecoration: `none`,
-                color: `inherit`,
-              }}
-              to={location.pathname === blogPath ? `/blog/` : `/`}
-            >
-              {title}
-              <h6
-                style={{
-                  marginTop: 0,
-                  paddingLeft: 10
-                }}
-              >"Code for your life!"</h6>
-            </Link>
-          </h1>
-          <Navigation />
-        </div>
-      )
-    } else {
-      header = (
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'center',
-            justifyContent: 'space-between'
-          }}
-        >
-          <h3
-            style={{
-              fontFamily: `Montserrat, sans-serif`,
-              marginTop: 0,
-            }}
-          >
-            <Link
-              style={{
-                boxShadow: `none`,
-                textDecoration: `none`,
-                color: `inherit`,
-              }}
-              to={location.pathname === blogPath ? `/` : `/blog/`}
-            >
-              {title}
-            </Link>
-          </h3>
-          <Navigation />
-        </div>
-      )
-    }
+    // if (location.pathname === rootPath || location.pathname === blogPath) {
+    //   header = (
+    //     <div
+    //       style={{
+    //         display: 'flex',
+    //         flexDirection: 'row',
+    //         alignItems: 'center',
+    //         justifyContent: 'space-between'
+    //       }}
+    //     >
+    //       <h1
+    //         style={{
+    //           ...scale(1.5),
+    //           marginBottom: rhythm(1.5),
+    //           marginTop: 0,
+    //         }}
+    //       >
+    //         <Link
+    //           style={{
+    //             boxShadow: `none`,
+    //             textDecoration: `none`,
+    //             color: `inherit`,
+    //           }}
+    //           to={location.pathname === blogPath ? `/blog/` : `/`}
+    //         >
+    //           {title}
+    //           <h6
+    //             style={{
+    //               marginTop: 0,
+    //               paddingLeft: 10
+    //             }}
+    //           >"Code for your life!"</h6>
+    //         </Link>
+    //       </h1>
+    //       <Navigation />
+    //     </div>
+    //   )
+    // } else {
+    //   header = (
+    //     <div
+    //       style={{
+    //         display: 'flex',
+    //         flexDirection: 'row',
+    //         alignItems: 'center',
+    //         justifyContent: 'space-between'
+    //       }}
+    //     >
+    //       <h3
+    //         style={{
+    //           fontFamily: `Montserrat, sans-serif`,
+    //           marginTop: 0,
+    //         }}
+    //       >
+    //         <Link
+    //           style={{
+    //             boxShadow: `none`,
+    //             textDecoration: `none`,
+    //             color: `inherit`,
+    //           }}
+    //           to={location.pathname === blogPath ? `/` : `/blog/`}
+    //         >
+    //           {title}
+    //         </Link>
+    //       </h3>
+    //       <Navigation />
+    //     </div>
+    //   )
+    // }
 
 
     return (
@@ -105,7 +105,8 @@ class Layout extends React.Component {
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
           }}
         >
-          <header>{header}</header>
+          <Navigation />
+          {/* <header>{header}</header> */}
           <main>{children}</main>
         </div>
           <Footer

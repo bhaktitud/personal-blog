@@ -2,3 +2,4 @@
 import "typeface-montserrat"
 import "typeface-merriweather"
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'popper.js'

@@ -37,7 +37,7 @@ class IndexPage extends React.Component {
             display: `flex`,
             flexDirection: 'column',
             alignItems: `center`,
-            justifyContent: `space-between`,
+            justifyContent:'center'
           }}
         >
           
@@ -50,8 +50,8 @@ class IndexPage extends React.Component {
               display: `flex`,
               flexDirection: `row`,
               alignItems: `center`,
-              justifyContent: `space-evenly`,
-              padding: 25
+              justifyContent: `center`,
+              padding: 20
             }}
           >
             {/* <div
@@ -85,8 +85,30 @@ class IndexPage extends React.Component {
               </h1>
               <p>
                 I am a <strong>Software Developer</strong>, currently love to write and share my knowledge to the open world!
+                I welcome You to my Personal Blog, mostly my articles contain tutorials, walkthrough and conceptual knowledge about Javascript Programming.
               </p>
-              <GitHubButton href="https://github.com/bhaktitud" data-show-count="true" aria-label="Follow @bhaktitud on GitHub">Follow @bhaktitud</GitHubButton>
+              <div
+                style={{
+                  display: `flex`,
+                  flexDirection: "row",
+                  alignItems: `center`,
+                  justifyContent: `space-between`
+                }}
+              >
+                <GitHubButton href="https://github.com/bhaktitud" data-show-count="true" aria-label="Follow @bhaktitud on GitHub">Follow @bhaktitud</GitHubButton>
+                <div
+                >
+                  <Link style={{boxShadow: 'none', textDecoration: 'none'}}>
+                    <img src="https://img.icons8.com/ios-glyphs/32/000000/linkedin.png" alt='linkedin' onClick={() => toLinkedIn()} />
+                  </Link>
+                  <Link style={{boxShadow: 'none', textDecoration: 'none'}}>
+                    <img src="https://img.icons8.com/ios-glyphs/32/000000/facebook.png" alt='facebook' onClick={() => toFacebook()} />
+                  </Link>
+                  <Link style={{boxShadow: 'none', textDecoration: 'none'}}>
+                    <img src="https://img.icons8.com/ios-glyphs/32/000000/twitter.png" alt='twitter' onClick={() => toTwitter()} />
+                  </Link>
+                </div>
+              </div>
             </div>
             <div
               style={{
@@ -95,25 +117,8 @@ class IndexPage extends React.Component {
                 alignItems: `center`,
               }}
             >
-            <p>connect</p>
-              <div
-                style={{
-                  display: `flex`,
-                  flexDirection: "row",
-                  alignItems: `center`,
-                  justifyContent: `center`
-                }}
-              >
-                <Link style={{boxShadow: 'none'}}>
-                  <img src="https://img.icons8.com/ios-glyphs/64/000000/linkedin.png" alt='linkedin' onClick={() => toLinkedIn()} />
-                </Link>
-                <Link style={{boxShadow: 'none'}}>
-                  <img src="https://img.icons8.com/ios-glyphs/64/000000/facebook.png" alt='facebook' onClick={() => toFacebook()} />
-                </Link>
-                <Link style={{boxShadow: 'none'}}>
-                  <img src="https://img.icons8.com/ios-glyphs/64/000000/twitter.png" alt='twitter' onClick={() => toTwitter()} />
-                </Link>
-              </div>
+            {/* <p>connect</p> */}
+              
             </div>
           </div>
         </div>

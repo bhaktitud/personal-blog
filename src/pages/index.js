@@ -104,9 +104,15 @@ class IndexPage extends React.Component {
                   justifyContent: `center`
                 }}
               >
-                <img src="https://img.icons8.com/ios-glyphs/64/000000/linkedin.png" alt='linkedin' onClick={() => toLinkedIn()} />
-                <img src="https://img.icons8.com/ios-glyphs/64/000000/facebook.png" alt='facebook' onClick={() => toFacebook()} />
-                <img src="https://img.icons8.com/ios-glyphs/64/000000/twitter.png" alt='twitter' onClick={() => toTwitter()} />
+                <Link style={{boxShadow: 'none'}}>
+                  <img src="https://img.icons8.com/ios-glyphs/64/000000/linkedin.png" alt='linkedin' onClick={() => toLinkedIn()} />
+                </Link>
+                <Link style={{boxShadow: 'none'}}>
+                  <img src="https://img.icons8.com/ios-glyphs/64/000000/facebook.png" alt='facebook' onClick={() => toFacebook()} />
+                </Link>
+                <Link style={{boxShadow: 'none'}}>
+                  <img src="https://img.icons8.com/ios-glyphs/64/000000/twitter.png" alt='twitter' onClick={() => toTwitter()} />
+                </Link>
               </div>
             </div>
           </div>

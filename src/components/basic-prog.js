@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 function BasicProg() {
     return (
@@ -16,7 +17,9 @@ function BasicProg() {
             <div
                 style={{marginLeft: '10%'}}
             >
-                <h4>Basic Programming</h4>
+                <h4>
+                   <Link style={{boxShadow: 'none', textDecoration: 'none', color: 'inherit'}}>Basic Programming </Link>
+                </h4>
                 <p>All about basic programming in javascript, you will learn basic commands in javascript, Loop, Conditional, Nested-Loop, Nested-Condition and many more.</p>
                 <hr />
             </div>

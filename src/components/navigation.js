@@ -13,11 +13,10 @@ function Navigation() {
                         ...scale(1),
                         marginBottom: rhythm(1.5),
                         marginTop: 0,
-                        textDecoration: 'none',
                         width: '150%'
                     }}
-                >
-                    <Link style={{textDecoration: 'none'}} className=" mx-auto" to="/">CodeJam</Link>
+                >   
+                    <Link style={{textDecoration: 'inherit', color: 'inherit', boxShadow: 'none'}} className="mx-auto" to="/">CodeJam</Link>
                 </h3>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
                     <span className="navbar-toggler-icon"></span>
@@ -26,10 +25,10 @@ function Navigation() {
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                        <Link className="nav-link" to="/blog/">Articles</Link>
+                        <Link style={{boxShadow: 'none'}} className="nav-link" to="/blog/">Articles</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/about/">About</Link>
+                        <Link style={{boxShadow: 'none'}} className="nav-link" to="/about/">About</Link>
                     </li>
                 </ul>
             </div>

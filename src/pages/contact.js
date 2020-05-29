@@ -41,7 +41,7 @@ class About extends React.Component {
                             <label for="subject">Subject</label>
                             <textarea id="subject" name="subject" placeholder="Write something.." style={{height:"200px"}}></textarea>
 
-                            <input type="submit" value="Submit" />
+                            <button className="btn btn-primary">Submit</button>
                         </form>
 
                 </div>

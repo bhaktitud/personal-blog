@@ -5,7 +5,7 @@ const Tags = ({ children }) => (
         style={{
             border: '0.5px solid #aaaaaa',
             borderRadius: 5,
-            padding: 2,
+            padding: 5,
             marginLeft: 2
         }}
     >{children}</span>   

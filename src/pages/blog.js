@@ -29,6 +29,73 @@ class Blog extends React.Component {
         <div style={{ marginTop: '5%' }}>
           <h4>All Posts ({posts.length})</h4>
         </div>
+        <div style={{marginTop: 25}}>
+          <ul
+            style={{
+              textDecoration: 'none',
+              listStyleType: 'none',
+              display: 'flex',
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'flex-start',
+            }}
+          >
+            <li className="h5"
+              style={{
+                marginRight: 5
+              }}
+            >
+              <Tags>
+                <Link 
+                  style={{
+                    boxShadow: 'none',
+                    color: 'inherit',
+                    textDecoration: 'none',
+                  }}
+                  to='/basicprog/'
+                >
+                  Basic Programming
+                </Link>
+              </Tags>
+            </li>
+            <li className="h5"
+              style={{
+                marginRight: 5
+              }}
+            >
+              <Tags>
+                <Link 
+                  style={{
+                    boxShadow: 'none',
+                    color: 'inherit',
+                    textDecoration: 'none'
+                  }}
+                  to='/backend/'
+                >
+                  Back-End
+                </Link>
+              </Tags>
+            </li>
+            <li className="h5"
+              style={{
+                marginRight: 5
+              }}
+            >
+              <Tags>
+                <Link 
+                  style={{
+                    boxShadow: 'none',
+                    color: 'inherit',
+                    textDecoration: 'none'
+                  }}
+                  to='/frontend/'
+                >
+                  Front-End
+                </Link>
+              </Tags>
+            </li>
+          </ul>
+        </div>
         <div style={{ margin: "50px 0 40px" }}>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug

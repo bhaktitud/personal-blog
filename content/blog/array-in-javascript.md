@@ -87,3 +87,8 @@ David 90 A
 ```
 
 Alright, we have now our result with the following grade of each student, which is great. Perhaps, you will find that this is the simplest case to try out. Explore more to let yourself get used to it, add another assumption, make the problem even more complicated and try to solve it. Happy Coding :)
+
+Worth to read[](https://www.w3schools.com/js/js_arrays.asp):
+
+1. [W3 Schools Array in JS](https://www.w3schools.com/js/js_arrays.asp)
+2. [MDN Developer Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)

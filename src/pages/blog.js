@@ -36,11 +36,11 @@ class Blog extends React.Component {
               listStyleType: 'none',
               display: 'flex',
               flexDirection: 'row',
-              alignItems: 'center',
+              alignItems: 'flex-start',
               justifyContent: 'flex-start',
             }}
           >
-            <li className="h5"
+            <li className="small"
               style={{
                 marginRight: 5
               }}
@@ -58,7 +58,7 @@ class Blog extends React.Component {
                 </Link>
               </Tags>
             </li>
-            <li className="h5"
+            <li className="small"
               style={{
                 marginRight: 5
               }}
@@ -76,7 +76,7 @@ class Blog extends React.Component {
                 </Link>
               </Tags>
             </li>
-            <li className="h5"
+            <li className="small"
               style={{
                 marginRight: 5
               }}

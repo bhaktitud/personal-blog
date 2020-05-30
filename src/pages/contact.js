@@ -10,37 +10,57 @@ class About extends React.Component {
         return(
             <Layout location={this.props.location} title={siteTitle}>
                 <div
-                    style={{ 
-                        margin: "20px 0 40px",
-                        display: 'flex',
-                        flexDirection: 'column'
-                    }}
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'flex-start',
+                    justifyContent: 'center'
+                  }}
                 >
-                        <h2>Reach out!</h2>
-                        <form
-                            name="contact"
-                            method="POST"
-                            action="https://getform.io/f/52bb6a9d-2079-4bcf-b748-28752ed3a795" 
-                            style={{
-                                display: 'flex',
-                                flexDirection: 'column' 
-                            }}
-                        >
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignSelf: `center`,
+                      flexDirection: 'column',
+                      width: `100%`
+                    }}
+                  >
+                      <h2>Reach out!</h2>
+                      <hr />
+                      <form
+                          name="contact"
+                          method="POST"
+                          action="https://getform.io/f/52bb6a9d-2079-4bcf-b748-28752ed3a795" 
+                          style={{
+                              display: 'flex',
+                              flexDirection: 'column',
+                          }}
+                      >
 
-                            <label for="fname">First Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+                          <label for="fname">First Name</label>
+                          <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+                          
+                          <label for="email">Email</label>
+                          <input type="email" id="email" name="email" placeholder="Your email address.." />
 
-                            <label for="lname">Last Name</label>
-                            <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
-                            
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Your email address.." />
+                          <label for="subject">Subject</label>
+                          <textarea id="subject" name="subject" placeholder="Write something.." style={{height:"200px"}}></textarea>
 
-                            <label for="subject">Subject</label>
-                            <textarea id="subject" name="subject" placeholder="Write something.." style={{height:"200px"}}></textarea>
-                            
-                            <button className="btn btn-primary" type="submit">Submit</button>
-                        </form>
+                          <button className="btn btn-primary" type="submit" style={{marginTop: 5}}>Submit</button>
+                      </form>
+                  </div>
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignSelf: `center`,
+                      flexDirection: 'column',
+                      width: '100%'
+                    }}
+                  >
+                    <h2>Newsletter</h2>
+                    <hr />
+                    <iframe src="https://bhakti3c0.substack.com/embed" height="320" frameborder="0" scrolling="no"></iframe>
+                  </div>      
                 </div>
             </Layout>
         )

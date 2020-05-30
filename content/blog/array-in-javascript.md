@@ -20,7 +20,6 @@ That is how we declare and assign values to an array variable. In that case, sup
 Output: 
 [60,75,80,90]
 ['Tony', 'Nana', 'Joe', 'David']
-
 ```
 
 So, what's next? Let say we want to extract the array to get each value inside it. We can use `for statement` this should be the best practice to extract data from an array list, although you can do it manually, but really?. 
@@ -35,7 +34,7 @@ for(let i = 0; i < scoreList.length; i++){
 }
 ```
 
-Assuming that you are already know how to use `for statement` the code simply wants to extract the value based on their `index i`, we can use the either the length of `scoreList` or `studentList` since they have the same length and related to each other. Finally, we log the result to the console and it should look like this:
+Assuming that you are already know how to use `for statement` the code simply wants to extract the value based on their `index i`, we can use either the length of `scoreList` or `studentList` since they have the same length and related to each other. Finally, we log the result to the console and it should look like this:
 
 ```
 score name

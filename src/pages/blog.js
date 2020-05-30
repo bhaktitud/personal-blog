@@ -104,7 +104,7 @@ class Blog extends React.Component {
                 className='card' key={node.fields.slug} 
                 style={{ 
                   marginBottom: 20, 
-                  borderRadius: 5,
+                  borderRadius: 5
                 }}
               >
                 <h3
@@ -130,6 +130,7 @@ class Blog extends React.Component {
                     dangerouslySetInnerHTML={{
                       __html: node.frontmatter.description || node.excerpt,
                     }}
+                    style={{marginTop: 5}}
                   />
                   <small>Author: <strong>{author}</strong></small>
                 </div>

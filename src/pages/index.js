@@ -46,7 +46,6 @@ class IndexPage extends React.Component {
               width: '100%',
               backgroundColor: 'rgba(155, 155, 155, 0.5)',
               borderRadius: 25,
-              // boxShadow: `2px 2px 30px 5px #aaaaaa`,
               display: `flex`,
               flexDirection: `row`,
               alignItems: `center`,
@@ -54,27 +53,6 @@ class IndexPage extends React.Component {
               padding: 20
             }}
           >
-            {/* <div
-              style={{
-                width: '40%',
-                height: '100%',
-                display: `flex`,
-                alignItems:'center',
-                justifyContent: `center`,
-              }}
-            >
-              <img src="https://firebasestorage.googleapis.com/v0/b/cloudstore-4cb34.appspot.com/o/images%2F12314343_10205659334662146_8175879808458816792_o.jpg?alt=media&token=fedd7231-1f8e-4490-8063-8dc4166db19c" alt="profile"
-                style={{
-                  borderRadius: '10%',
-                  width: '70%',
-                  height: '50%',
-                  alignItems: 'center',
-                  marginTop: 20,
-                  // boxShadow: `2px 2px 5px 5px #aaaaaa`,
-
-                }}
-              />
-            </div> */}
             <div
             >
               <h1>

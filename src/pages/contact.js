@@ -18,10 +18,9 @@ class About extends React.Component {
                 >
                         <h2>Reach out!</h2>
                         <form
-                            name="contact-user"
-                            method="POST" 
-                            data-netlify="true"
-                            netlify-honeypot="bot-field"
+                            name="contact"
+                            method="POST"
+                            action="https://getform.io/f/52bb6a9d-2079-4bcf-b748-28752ed3a795" 
                             style={{
                                 display: 'flex',
                                 flexDirection: 'column' 

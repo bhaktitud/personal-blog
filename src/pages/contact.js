@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
 class About extends React.Component {

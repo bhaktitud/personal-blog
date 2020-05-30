@@ -8,7 +8,7 @@ import Tags from '../components/tags'
 import { rhythm } from "../utils/typography"
 
 
-class Blog extends React.Component {
+class FrontEnd extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -17,7 +17,7 @@ class Blog extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
+        <SEO title="Basic Programming Posts" />
         <div
           style={{
             marginTop: '5%'
@@ -27,14 +27,14 @@ class Blog extends React.Component {
         </div>
         <hr />
         <div style={{ marginTop: '5%' }}>
-          <h4>All Posts ({posts.length})</h4>
+          <h4>Front-End Development ({posts.length})</h4>
         </div>
         <div style={{ margin: "50px 0 40px" }}>
           {posts.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
+            const title = node.frontmatter.title
             return (
               <div 
-                className='card' key={node.fields.slug} 
+                className='card'
                 style={{ 
                   marginBottom: 20, 
                   borderRadius: 5,
@@ -49,7 +49,7 @@ class Blog extends React.Component {
                     <img style={{marginRight: 10, padding: 0, marginBottom: 0}} src="https://img.icons8.com/carbon-copy/100/000000/book.png" alt="book" width='48'/>
                     <Link
                       style={{ boxShadow: `none`, textDecoration: `none`, color: 'inherit' }}
-                      to={`blog${node.fields.slug}`}
+                      to={`blog$`}
                     >
                       {title}
                     </Link>
@@ -76,7 +76,7 @@ class Blog extends React.Component {
   }
 }
 
-export default Blog
+export default FrontEnd
 
 export const pageQuery = graphql`
   query {
@@ -86,21 +86,20 @@ export const pageQuery = graphql`
         author
       }
     }
-    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
-            tags
+    allMdx(filter: {frontmatter: {tags: {in: ["front-end"]}}}) {
+        edges {
+          node {
+            id
+            excerpt(pruneLength: 250)
+            frontmatter {
+              date(formatString: "MMMM DD, YYYY")
+              path
+              title
+              description
+              tags
+            }
           }
         }
       }
-    }
   }
 `

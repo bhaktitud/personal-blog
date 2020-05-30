@@ -31,10 +31,10 @@ class BasicProgramming extends React.Component {
         </div>
         <div style={{ margin: "50px 0 40px" }}>
           {posts.map(({ node }) => {
-            const title = node.frontmatter.title
+            const title = node.frontmatter.title || node.fields.slug
             return (
               <div 
-                className='card'
+                className='card' key={node.fields.slug} 
                 style={{ 
                   marginBottom: 20, 
                   borderRadius: 5,
@@ -49,7 +49,7 @@ class BasicProgramming extends React.Component {
                     <img style={{marginRight: 10, padding: 0, marginBottom: 0}} src="https://img.icons8.com/carbon-copy/100/000000/book.png" alt="book" width='48'/>
                     <Link
                       style={{ boxShadow: `none`, textDecoration: `none`, color: 'inherit' }}
-                      to={`blog$`}
+                      to={`blog${node.fields.slug}`}
                     >
                       {title}
                     </Link>
@@ -91,6 +91,9 @@ export const pageQuery = graphql`
           node {
             id
             excerpt(pruneLength: 250)
+            fields {
+              slug
+            }
             frontmatter {
               date(formatString: "MMMM DD, YYYY")
               path

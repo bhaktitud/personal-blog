@@ -25,95 +25,27 @@ class Layout extends React.Component {
     const blogPath = `${__PATH_PREFIX__}/blog/`
     let header
 
-    // if (location.pathname === rootPath || location.pathname === blogPath) {
-    //   header = (
-    //     <div
-    //       style={{
-    //         display: 'flex',
-    //         flexDirection: 'row',
-    //         alignItems: 'center',
-    //         justifyContent: 'space-between'
-    //       }}
-    //     >
-    //       <h1
-    //         style={{
-    //           ...scale(1.5),
-    //           marginBottom: rhythm(1.5),
-    //           marginTop: 0,
-    //         }}
-    //       >
-    //         <Link
-    //           style={{
-    //             boxShadow: `none`,
-    //             textDecoration: `none`,
-    //             color: `inherit`,
-    //           }}
-    //           to={location.pathname === blogPath ? `/blog/` : `/`}
-    //         >
-    //           {title}
-    //           <h6
-    //             style={{
-    //               marginTop: 0,
-    //               paddingLeft: 10
-    //             }}
-    //           >"Code for your life!"</h6>
-    //         </Link>
-    //       </h1>
-    //       <Navigation />
-    //     </div>
-    //   )
-    // } else {
-    //   header = (
-    //     <div
-    //       style={{
-    //         display: 'flex',
-    //         flexDirection: 'row',
-    //         alignItems: 'center',
-    //         justifyContent: 'space-between'
-    //       }}
-    //     >
-    //       <h3
-    //         style={{
-    //           fontFamily: `Montserrat, sans-serif`,
-    //           marginTop: 0,
-    //         }}
-    //       >
-    //         <Link
-    //           style={{
-    //             boxShadow: `none`,
-    //             textDecoration: `none`,
-    //             color: `inherit`,
-    //           }}
-    //           to={location.pathname === blogPath ? `/` : `/blog/`}
-    //         >
-    //           {title}
-    //         </Link>
-    //       </h3>
-    //       <Navigation />
-    //     </div>
-    //   )
-    // }
-
-
     return (
       <Wrapper>
         <div
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
-            maxWidth: rhythm(24),
+            maxWidth: rhythm(28),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
           }}
         >
           <Navigation />
           <main>{children}</main>
-        </div>
           <Footer
             style={{
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
+              justifyContent: 'center',
+              paddingTop: 10
             }}
+            className="bg-light rounded border"
           >
             <h6>Bhakti Budiman Novanda, {new Date().getFullYear()}</h6>
             <div style={{display: 'flex', alignItems: 'center', flexDirection: 'row'}}>
@@ -122,6 +54,7 @@ class Layout extends React.Component {
                 <img style={{marginRight: 5}} title="Hosted with Netlify" src="https://firebasestorage.googleapis.com/v0/b/cloudstore-4cb34.appspot.com/o/netlify-logo-png-transparent.png?alt=media&token=dbd3de58-cd40-48d9-80e2-0e2320e0c9d9-logo-png-transparent.png" alt="netlify" width="24" onClick={this.toNetlify}></img>
             </div>
           </Footer>
+        </div>
       </Wrapper>
     )
   }

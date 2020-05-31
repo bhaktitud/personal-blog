@@ -14,7 +14,8 @@ class About extends React.Component {
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'flex-start',
-                    justifyContent: 'center'
+                    justifyContent: 'center',
+                    marginTop: '2%'
                   }}
                 >
                   <div
@@ -25,7 +26,7 @@ class About extends React.Component {
                       width: `100%`
                     }}
                   >
-                      <h2>Reach out!</h2>
+                      <h3><strong>Reach Out!</strong></h3>
                       <hr />
                       <form
                           name="contact"
@@ -43,7 +44,7 @@ class About extends React.Component {
                           <label for="email">Email</label>
                           <input type="email" id="email" name="email" placeholder="Your email address.." />
 
-                          <label for="subject">Subject</label>
+                          <label for="subject">Subject / Question</label>
                           <textarea id="subject" name="subject" placeholder="Write something.." style={{height:"200px"}}></textarea>
 
                           <button className="btn btn-primary" type="submit" style={{marginTop: 5}}>Submit</button>
@@ -57,7 +58,7 @@ class About extends React.Component {
                       width: '100%'
                     }}
                   >
-                    <h2>Newsletter</h2>
+                    <h3><strong>Newsletter</strong></h3>
                     <hr />
                     <iframe src="https://bhakti3c0.substack.com/embed" height="320" frameborder="0" scrolling="no"></iframe>
                   </div>      

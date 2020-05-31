@@ -49,7 +49,15 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-        <Bio />
+        <div
+          className="bg-light border rounded"
+          style={{
+            padding: 10,
+            margin: 10
+          }}
+        >
+          <Bio />
+        </div>
 
         <ul
           style={{

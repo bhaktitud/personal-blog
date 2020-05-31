@@ -9,6 +9,7 @@ import BasicProg from '../components/basic-prog'
 import BackEnd from "../components/back-end"
 import FrontEnd from "../components/front-end"
 
+
 class IndexPage extends React.Component {
   render() {
     const siteTitle = "CodeJam"
@@ -37,7 +38,7 @@ class IndexPage extends React.Component {
             display: `flex`,
             flexDirection: 'column',
             alignItems: `center`,
-            justifyContent:'center'
+            marginTop: '10%'
           }}
         >
           

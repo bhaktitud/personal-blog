@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import { rhythm, scale } from "../utils/typography"
+import { scale } from "../utils/typography"
 
 function Navigation() {
     return (
-        <nav className="navbar navbar-expand-md navbar-light bg-white">
+        <nav className="navbar navbar-expand-md navbar-light bg-light rounded border">
             <div className="mx-auto order-0" 
                 style={{
                     display: 'flex',
@@ -17,7 +17,6 @@ function Navigation() {
                     style={{
                         display: 'flex',
                         flexDirection: 'column',
-                        marginBottom: rhythm(1.5),
                     }}
                 >
                     <h3
@@ -28,7 +27,7 @@ function Navigation() {
                             width: '150%'
                         }}
                     >   
-                        <Link style={{textDecoration: 'inherit', color: 'inherit', boxShadow: 'none'}} className="mx-auto" to="/">CodeJam</Link>
+                        <Link style={{textDecoration: 'inherit', color: 'inherit', boxShadow: 'none'}} className="mx-auto" to="/">BhaktiDev</Link>
                     </h3>
                     <small style={{marginLeft: '2%'}}>"Code for your life!"</small>
                 </div>

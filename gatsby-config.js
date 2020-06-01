@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `CodeJam`,
+    title: `BhaktiDev`,
     author: `Bhakti Budiman Novanda`,
     description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
     siteUrl: `https://bhaktixdev.netlify.app/`,

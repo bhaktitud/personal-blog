@@ -4,6 +4,7 @@ date: 2020-05-28T10:32:32.216Z
 title: How To Create a Personal Blog With Gatsby
 description: A tutorial to build a personal blog using gatsby and netlify cms
 tags: ["web development", "blog", "gatsby", "javascript", "front-end", "graphql", "react"]
+likes: 0
 ---
 Hi, in this article we will create a personal blog by using Gatsby.js and Netlify as the cms and hosting. To begin with, there are several requirement that you have to meet,
 

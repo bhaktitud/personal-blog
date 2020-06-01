@@ -20,7 +20,7 @@ function FrontEnd() {
                 }}
             >
                 <h4>
-                    <Link style={{boxShadow: 'none', textDecoration: 'none', color: 'inherit'}} to="/frontend">Front-End Dev</Link>
+                    <Link style={{textDecoration: 'none', color: 'inherit'}} to="/frontend">Front-End Dev</Link>
                 </h4>
                 <p>All about front-end development, you will learn how to develop client side using React.js, Redux and many more...</p>
                 <hr />

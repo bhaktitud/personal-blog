@@ -18,7 +18,7 @@ function BasicProg() {
                 style={{marginLeft: '10%'}}
             >
                 <h4>
-                   <Link style={{boxShadow: 'none', textDecoration: 'none', color: 'inherit'}} to="/basicprog/">Basic Programming </Link>
+                   <Link style={{textDecoration: 'none', color: 'inherit'}} to="/basicprog/">Basic Programming </Link>
                 </h4>
                 <p>All about basic programming in javascript, you will learn basic commands in javascript, Loop, Conditional, Nested-Loop, Nested-Condition and many more.</p>
                 <hr />

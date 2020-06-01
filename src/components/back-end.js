@@ -13,7 +13,7 @@ function BackEnd() {
         >
             <div>
                 <h4>
-                    <Link style={{boxShadow: 'none', textDecoration: 'none', color: 'inherit'}} to="/backend/">Back-End Dev</Link>
+                    <Link style={{textDecoration: 'none', color: 'inherit'}} to="/backend/">Back-End Dev</Link>
                 </h4>
                 <p>All about back-end development, primarily express.js, node, postgresql, sequelize. In this section you will need to have a good fundamental knowledge of javascript.</p>
                 <hr />

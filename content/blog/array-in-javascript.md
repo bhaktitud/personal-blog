@@ -4,6 +4,7 @@ date: 2020-05-30T04:20:11.611Z
 title: Array in Javascript
 description: A brief explanation of Array in Javascript with example
 tags: ["basic programming", "tutorial", "theory", "javascript"]
+likes: 0
 ---
 Hi, In this article we will talk about Array in Javascript. As we all know previously, a variable can only hold / assign one single value, `let x = 'something'` for instance. Using an array you can assign multiple value into it, usually array used to keep dataset which has the same behavior and data type one to another, but this is not limited to, you can assign any multiple data value into a single array variable. Let us have a look at the example below, 
 

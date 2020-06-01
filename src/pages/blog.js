@@ -99,6 +99,7 @@ class Blog extends React.Component {
         <div style={{ margin: "50px 0 40px" }}>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
+            const likes = node.frontmatter.likes
             return (
               <div 
                 className='card' key={node.fields.slug} 
@@ -166,6 +167,7 @@ export const pageQuery = graphql`
             title
             description
             tags
+            likes
           }
         }
       }

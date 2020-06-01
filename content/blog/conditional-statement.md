@@ -4,6 +4,7 @@ date: 2020-05-27T15:10:01.269Z
 title: Conditional Statement
 description: A brief introduction to conditional statement in javascript
 tags: ["basic programming", "tutorial", "theory", "javascript"]
+likes: 0
 ---
 Hi, You might already heard or familiar with "*Conditional Statement"* before, in which a statement that should return boolean **"True"** or **"False"**. When the statement is True then you do or execute *command A*, or else do the *command B* or do nothing. In Javascript we use if-else conditional statement to handle these kind of problems (well, in fact it also used in other programming language). So this is how it is written,
 

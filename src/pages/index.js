@@ -12,7 +12,7 @@ import FrontEnd from "../components/front-end"
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "CodeJam"
+    const siteTitle = "BhaktiDev"
 
     const toLinkedIn = () => {
       window.open('https://www.linkedin.com/in/bhaktibudimannovanda', '_blank');

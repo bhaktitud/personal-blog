@@ -8,6 +8,7 @@ import GitHubButton from 'react-github-btn'
 import BasicProg from '../components/basic-prog'
 import BackEnd from "../components/back-end"
 import FrontEnd from "../components/front-end"
+import { Helmet } from "react-helmet"
 
 
 class IndexPage extends React.Component {
@@ -113,6 +114,9 @@ class IndexPage extends React.Component {
             alignItems: 'center'
           }}
         >
+          <Helmet>
+            <script type="text/javascript" src="//uprimp.com/slider.php?section=General&pub=727262&ga=g&side=random"></script>
+          </Helmet>
           <BasicProg />
           <BackEnd />
           <FrontEnd />

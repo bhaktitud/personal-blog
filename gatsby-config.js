@@ -3,7 +3,7 @@ module.exports = {
     // edit below
     title: `BhaktiDev`,
     author: `Bhakti Budiman Novanda`,
-    description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
+    description: `I am a Software Developer, currently love to write and share my knowledge to the open world! I welcome You to my Personal Blog, mostly my articles contain tutorials, walkthrough and conceptual knowledge about Javascript Programming.`,
     siteUrl: `https://bhaktixdev.netlify.app/`,
     social: {
       twitter: `BhaktiNMF`,

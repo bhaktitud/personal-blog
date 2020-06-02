@@ -3,6 +3,11 @@ path: object-in-javascript
 date: 2020-06-02T04:20:33.232Z
 title: Object Literal In Javascript
 description: A brief introduction to use Object in Javascript.
+tags:
+  - basic programming
+  - javascript
+  - theory
+  - tutorial
 ---
 ![Object Literal](assets/object-literal.png "Object Literal")
 

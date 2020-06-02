@@ -64,7 +64,6 @@ person['gender'] = 'male';
 console.log(person.name, person.age, person.marriage, person.gender)
 // or
 console.log(person['name'], person['age'], person['marriage'], person['gender'])
-
 ```
 
 ```javascript
@@ -73,12 +72,9 @@ tony 27 false male
 tony 27 false male
 ```
 
- Yes, absolutely just like the method how we add the properties. Go ahead, try to explore more use the code editor by [Codesandbox](https://codesandbox.io/) below. Happy Coding!
+ Yes, absolutely just like the method how we add the properties. Go ahead, try to explore more by making it more complicated. Happy Coding!
 
-<iframe
-     src="https://codesandbox.io/embed/jolly-knuth-79d4u?autoresize=1&expanddevtools=1&fontsize=14&hidenavigation=1&theme=dark"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="jolly-knuth-79d4u"
-     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-     sandbox="allow-autoplay allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-   ></iframe>
+Worth to read:
+
+1. [W3Schools Object Literal](https://www.w3schools.com/js/js_objects.asp)
+2. [Working with Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)

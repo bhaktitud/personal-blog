@@ -42,7 +42,7 @@ class IndexPage extends React.Component {
             marginTop: '10%'
           }}
         >
-          
+  
           <div
             style={{
               width: '100%',
@@ -55,6 +55,7 @@ class IndexPage extends React.Component {
               padding: 20
             }}
           >
+            
             <div
             >
               <h1>

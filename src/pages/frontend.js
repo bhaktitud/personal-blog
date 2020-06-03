@@ -67,8 +67,6 @@ class FrontEnd extends React.Component {
                     style={{marginTop: 5}}
                   />
                   <small>Author: <strong>{author}</strong></small>
-                  <br />
-                  <small>Est: <strong>{readingTime}</strong></small>
                 </div>
               </div>
             )

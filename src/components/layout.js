@@ -32,7 +32,7 @@ class Layout extends React.Component {
             marginLeft: `auto`,
             marginRight: `auto`,
             maxWidth: rhythm(28),
-            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+            padding: `${rhythm(1.5)} ${rhythm(1 / 4)}`,
           }}
         >
           <Navigation />
@@ -43,7 +43,7 @@ class Layout extends React.Component {
               flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'center',
-              paddingTop: 10
+              paddingTop: 5,
             }}
             className="bg-light rounded border"
           >

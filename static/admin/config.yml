@@ -17,6 +17,9 @@ collections:
       - { name: description, label: Description }
       - { name: body, label: Body, widget: markdown }
       - { name: tags, label: Tags, widget: list }
+      - { name: image, label: "Cover Image", widget: image, required: false, tagname: "" }
+    meta:
+      - {label: "SEO Description", name: "description", widget: "text"}
   - name: backend
     label: BackEnd
     folder: content/backend

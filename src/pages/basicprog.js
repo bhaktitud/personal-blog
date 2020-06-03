@@ -87,7 +87,7 @@ export const pageQuery = graphql`
         author
       }
     }
-    allMdx(filter: {frontmatter: {tags: {in: ["basic programming"]}}}) {
+    allMdx(filter: {frontmatter: {tags: {in: ["basic programming"]}}}, sort: { fields: [frontmatter___date], order: DESC }) {
         edges {
           node {
             id

@@ -87,7 +87,7 @@ export const pageQuery = graphql`
         author
       }
     }
-    allMdx(filter: {frontmatter: {tags: {in: ["back-end"]}}}) {
+    allMdx(filter: {frontmatter: {tags: {in: ["back-end"]}}}, sort: { fields: [frontmatter___date], order: DESC }) {
         edges {
           node {
             id

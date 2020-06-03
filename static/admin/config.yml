@@ -17,3 +17,14 @@ collections:
       - { name: description, label: Description }
       - { name: body, label: Body, widget: markdown }
       - { name: tags, label: Tags, widget: list }
+  - name: backend
+    label: BackEnd
+    folder: content/backend
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: body, label: Body, widget: markdown }
+      - { name: tags, label: Tags, widget: list }

@@ -100,6 +100,7 @@ class Blog extends React.Component {
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             const likes = node.frontmatter.likes
+            const readingTime = node.fields.readingTime.text
             return (
               <div 
                 className='card' key={node.fields.slug} 
@@ -134,6 +135,8 @@ class Blog extends React.Component {
                     style={{marginTop: 5}}
                   />
                   <small>Author: <strong>{author}</strong></small>
+                  <br />
+                  <small>Est: <strong>{readingTime}</strong></small>
                 </div>
               </div>
             )
@@ -161,6 +164,9 @@ export const pageQuery = graphql`
           excerpt
           fields {
             slug
+            readingTime{
+              text
+            }
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")

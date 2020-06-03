@@ -32,6 +32,7 @@ class FrontEnd extends React.Component {
         <div style={{ margin: "50px 0 40px" }}>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
+            const readingTime = node.fields.readingTime.text
             return (
               <div 
                 className='card' key={node.fields.slug} 
@@ -66,6 +67,8 @@ class FrontEnd extends React.Component {
                     style={{marginTop: 5}}
                   />
                   <small>Author: <strong>{author}</strong></small>
+                  <br />
+                  <small>Est: <strong>{readingTime}</strong></small>
                 </div>
               </div>
             )
@@ -94,6 +97,9 @@ export const pageQuery = graphql`
             excerpt(pruneLength: 250)
             fields {
               slug
+              readingTime{
+                text
+              }
             }
             frontmatter {
               date(formatString: "MMMM DD, YYYY")

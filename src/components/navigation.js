@@ -2,8 +2,16 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import { scale } from "../utils/typography"
+import styled from 'styled-components'
 
 function Navigation() {
+
+    const NavText = styled.p`
+    &:hover{
+        transform: scale(1.1);
+      }
+    `
+
     return (
         <nav className="navbar navbar-expand-md navbar-light bg-light rounded border sticky-top shadow">
             <div className="mx-auto order-0" 
@@ -38,13 +46,13 @@ function Navigation() {
             <div className="navbar-collapse collapse w-100 order-3" id='navigationCollection'>
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                        <Link style={{boxShadow: 'none'}} className="nav-link" to="/blog/">Articles</Link>
+                        <Link style={{boxShadow: 'none'}} className="nav-link" to="/blog/"><NavText>Articles</NavText></Link>
                     </li>
                     <li className="nav-item">
-                        <Link style={{boxShadow: 'none'}} className="nav-link" to="/about/">About</Link>
+                        <Link style={{boxShadow: 'none'}} className="nav-link" to="/about/"><NavText>About</NavText></Link>
                     </li>
                     <li className="nav-item">
-                        <Link style={{boxShadow: 'none'}} className="nav-link" to="/contact/">Contact</Link>
+                        <Link style={{boxShadow: 'none'}} className="nav-link" to="/contact/"><NavText>Contact</NavText></Link>
                     </li>
                 </ul>
             </div>

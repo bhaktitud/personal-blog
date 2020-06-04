@@ -6,7 +6,15 @@ import SEO from "../components/seo"
 import Bio from '../components/bio'
 import Tags from '../components/tags'
 import { rhythm } from "../utils/typography"
+import styled from "styled-components"
 
+
+const PostCard = styled.div`
+&:hover{
+    transform: scale(1.02);
+  }
+
+`
 
 class BackEnd extends React.Component {
   render() {
@@ -34,7 +42,12 @@ class BackEnd extends React.Component {
             const title = node.frontmatter.title || node.fields.slug
             const readingTime = node.fields.readingTime.text
             return (
-              <div 
+
+              <Link
+              style={{ boxShadow: `none`, textDecoration: `none`, color: 'inherit' }}
+              to={`blog${node.fields.slug}`}
+              >
+              <PostCard 
                 className='card' key={node.fields.slug} 
                 style={{ 
                   marginBottom: 20, 
@@ -68,7 +81,8 @@ class BackEnd extends React.Component {
                   />
                   <small>Author: <strong>{author}</strong></small>
                 </div>
-              </div>
+              </PostCard>
+              </Link>
             )
           })}
         </div>

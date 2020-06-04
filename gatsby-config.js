@@ -110,5 +110,21 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `limelight`,
+          `Black Ops One` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `ca-pub-1639440201559812`
+      },
+    },
   ],
 }

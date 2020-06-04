@@ -11,8 +11,9 @@ import styled from "styled-components"
 
 const PostCard = styled.div`
 &:hover{
+    box-shadow: 0 4px 2px 2px rgba(0,0,0,0.15);
     transform: scale(1.02);
-    transition: 0.3s
+    transition: box-shadow 0.3s ease-in-out;
   }
 
 `

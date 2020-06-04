@@ -9,7 +9,15 @@ import BasicProg from '../components/basic-prog'
 import BackEnd from "../components/back-end"
 import FrontEnd from "../components/front-end"
 import { Helmet } from "react-helmet"
+import styled from "styled-components"
 
+
+const IconConnect = styled.img`
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.1s;
+      }
+    `
 
 class IndexPage extends React.Component {
   render() {
@@ -80,13 +88,13 @@ class IndexPage extends React.Component {
                 <div
                 >
                   <Link style={{boxShadow: 'none', textDecoration: 'none'}}>
-                    <img src="https://img.icons8.com/ios-glyphs/32/000000/linkedin.png" alt='linkedin' onClick={() => toLinkedIn()} />
+                    <IconConnect src="https://img.icons8.com/ios-glyphs/32/000000/linkedin.png" alt='linkedin' onClick={() => toLinkedIn()} />
                   </Link>
                   <Link style={{boxShadow: 'none', textDecoration: 'none'}}>
-                    <img src="https://img.icons8.com/ios-glyphs/32/000000/facebook.png" alt='facebook' onClick={() => toFacebook()} />
+                    <IconConnect src="https://img.icons8.com/ios-glyphs/32/000000/facebook.png" alt='facebook' onClick={() => toFacebook()} />
                   </Link>
                   <Link style={{boxShadow: 'none', textDecoration: 'none'}}>
-                    <img src="https://img.icons8.com/ios-glyphs/32/000000/twitter.png" alt='twitter' onClick={() => toTwitter()} />
+                    <IconConnect src="https://img.icons8.com/ios-glyphs/32/000000/twitter.png" alt='twitter' onClick={() => toTwitter()} />
                   </Link>
                 </div>
               </div>

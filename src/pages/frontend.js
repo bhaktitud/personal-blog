@@ -12,6 +12,7 @@ import styled from "styled-components"
 const PostCard = styled.div`
 &:hover{
     transform: scale(1.02);
+    transition: 0.3s;
   }
 
 `

@@ -9,6 +9,7 @@ function Navigation() {
     const NavText = styled.p`
     &:hover{
         transform: scale(1.1);
+        transition: 0.1s;
       }
     `
 

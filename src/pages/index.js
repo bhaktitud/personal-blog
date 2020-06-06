@@ -50,7 +50,6 @@ class IndexPage extends React.Component {
             marginTop: '10%'
           }}
         >
-  
           <div
             style={{
               width: '100%',
@@ -63,7 +62,6 @@ class IndexPage extends React.Component {
               padding: 20
             }}
           >
-            
             <div
             >
               <h1>
@@ -123,9 +121,9 @@ class IndexPage extends React.Component {
             alignItems: 'center'
           }}
         >
-          <Helmet>
+          {/* <Helmet>
             <script type="text/javascript" src="//uprimp.com/slider.php?section=General&pub=727262&ga=g&side=random"></script>
-          </Helmet>
+          </Helmet> */}
           <BasicProg />
           <BackEnd />
           <FrontEnd />

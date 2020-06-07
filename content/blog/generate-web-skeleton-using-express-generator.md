@@ -134,7 +134,7 @@ On Windows, run this command:
 > SET DEBUG=tutorialapp:* & npm run devstart
 ```
 
-On MacOS or Linus, run this command:
+On MacOS or Linux, run this command:
 
 ```javascript
 $ DEBUG=express-locallibrary-tutorial:* npm run devstart

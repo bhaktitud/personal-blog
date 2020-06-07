@@ -47,14 +47,15 @@ class IndexPage extends React.Component {
             display: `flex`,
             flexDirection: 'column',
             alignItems: `center`,
-            marginTop: '10%'
+            marginTop: '2%'
           }}
         >
           <div
+          className='shadow-lg'
             style={{
               width: '100%',
-              backgroundColor: 'rgba(155, 155, 155, 0.5)',
-              borderRadius: 25,
+              backgroundColor: '#FF416C',
+              borderRadius: 20,
               display: `flex`,
               flexDirection: `row`,
               alignItems: `center`,

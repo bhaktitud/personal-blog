@@ -76,7 +76,6 @@ $ express --view=ejs tutorialapp
 
    run the app:
      $ DEBUG=tutorialapp:* npm start
-
 ```
 
 Then head to the folder directory and install its dependencies:
@@ -104,6 +103,43 @@ Then open up your browser and hit the http://localhost:3000/ to access the app.
 
 ![express-tutorial](assets/express-tutorial.png "Express Application Generator Result")
 
-Congratulations! your express app is up and running, we will go deeper into it in the next tutorial, stay tuned!.\
+Now, let us enable the automatic server restart whenever there is a file changes. We will use a very convinient tool called [nodemon](https://github.com/remy/nodemon) in this case, so we need to install it before we can use it.
+
+To install nodemon locally in your development environment, run the following command:
+
+```javascript
+$ npm install --save-dev nodemon
+```
+
+If you choose to install it globally, then run this command:
+
+```javascript
+$ sudo npm install -g nodemon
+```
+
+Open up your project directory, and open the **package.json** file, right inside the `"scripts"` section, add the following code:
+
+```javascript
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
+    "serverstart": "DEBUG=tutorialapp:* npm run devstart"
+  },
+```
+
+Finally, you can then start the server by using the following command:\
+On Windows, run this command:
+
+```javascript
+> SET DEBUG=tutorialapp:* & npm run devstart
+```
+
+On MacOS or Linus, run this command:
+
+```javascript
+$ DEBUG=express-locallibrary-tutorial:* npm run devstart
+```
+
+Congratulations! your express app is up and running, we will go deeper into it in the next tutorial soon, stay tuned!.\
 \
 If you have any question regarding the tutorial or any related to javascript programming, please do not hesitate to ask me a question. You can comment on the comment section below or sending me an email (kindly send it to support@bhaktidev.com).

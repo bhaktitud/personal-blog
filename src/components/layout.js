@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 import { rhythm, scale } from "../utils/typography"
 import Navigation from './navigation'
+import { Helmet } from "react-helmet"
 
 
 const IconConnect = styled.img`
@@ -42,6 +43,9 @@ class Layout extends React.Component {
             padding: `${rhythm(1.5)} ${rhythm(1 / 4)}`
           }}
         >
+          <Helmet>
+            <script data-ad-client="ca-pub-1639440201559812" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          </Helmet>
         <Navigation />
           <div
           className='bg-light border rounded shadow-lg'

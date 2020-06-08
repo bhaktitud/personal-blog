@@ -121,10 +121,11 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-google-adsense`,
+      resolve: `@isamrish/gatsby-plugin-google-adsense`,
       options: {
-        publisherId: `ca-pub-1639440201559812`
-      },
+        googleAdClientId: `ca-pub-1639440201559812`,
+        head: true // Optional
+      }
     },
   ],
 }

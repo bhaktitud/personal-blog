@@ -49,7 +49,7 @@ class Layout extends React.Component {
           </Helmet>
         <Navigation />
           <div
-          className='bg-light border rounded'
+          className='bg-white border rounded'
             style={{
               marginLeft: `auto`,
               marginRight: `auto`,

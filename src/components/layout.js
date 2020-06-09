@@ -80,7 +80,7 @@ class Layout extends React.Component {
                   <IconConnect style={{marginRight: 5}} title="Hosted with Netlify" src="https://firebasestorage.googleapis.com/v0/b/cloudstore-4cb34.appspot.com/o/netlify-logo-png-transparent.png?alt=media&token=dbd3de58-cd40-48d9-80e2-0e2320e0c9d9-logo-png-transparent.png" alt="netlify" width="24" onClick={this.toNetlify}></IconConnect>
 
               </div>
-              <p class="has-line-data" data-line-start="0" data-line-end="1"><a href="https://app.netlify.com/sites/bhaktidev/deploys"><img src="https://api.netlify.com/api/v1/badges/b35e6d96-a7bb-4fbf-86b9-dad8fc3d4dde/deploy-status" alt="Netlify Status" /></a></p>
+              <p className="has-line-data" data-line-start="0" data-line-end="1"><a href="https://app.netlify.com/sites/bhaktidev/deploys"><img src="https://api.netlify.com/api/v1/badges/b35e6d96-a7bb-4fbf-86b9-dad8fc3d4dde/deploy-status" alt="Netlify Status" /></a></p>
             </Footer>
         </div>
       </Wrapper>

@@ -109,7 +109,7 @@ class Blog extends React.Component {
         <div style={{ margin: "50px 0 40px" }}>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
-            const likes = node.frontmatter.likes
+            const image = node.frontmatter.image
             const readingTime = node.fields.readingTime.text
             return (
               <Link
@@ -187,6 +187,7 @@ export const pageQuery = graphql`
             description
             tags
             likes
+            image
           }
         }
       }

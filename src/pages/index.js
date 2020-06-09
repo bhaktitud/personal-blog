@@ -63,8 +63,7 @@ class IndexPage extends React.Component {
               padding: 20,
             }}
           >
-            <div
-            >
+            <div>
               <h1
                 style={{ color: 'white' }}
               >
@@ -77,6 +76,7 @@ class IndexPage extends React.Component {
                 I am a <strong>Software Developer</strong>, currently love to write and share my knowledge to the open world!
                 I welcome You to my Personal Blog, mostly my articles contain tutorials, walkthrough and conceptual knowledge about Javascript Programming.
               </IntroString>
+
               <div
                 style={{
                   display: `flex`,
@@ -100,22 +100,28 @@ class IndexPage extends React.Component {
                 </div>
               </div>
             </div>
-            <div
-              style={{
-                display: `flex`,
-                flexDirection: "column",
-                alignItems: `center`,
-              }}
-            >
-            {/* <p>connect</p> */}
-              
-            </div>
+          </div>
+          <div
+          className='border rounded shadow'
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              marginTop:'50px',
+              width: '100%',
+              padding: '20px'
+            }}
+          >
+              <p>Stay updated with the latest tutorial and tech-news by BhaktiDev</p>
+              <iframe src="https://bhakti3c0.substack.com/embed" width='350' height="320" frameborder="0" scrolling="no"></iframe>
           </div>
         </div>
         <Link style={{boxShadow: 'none', textDecoration: 'none'}} to="/blog/">
           <Button marginTop="35px">Read Articles</Button>
         </Link>
         <hr />
+
         <div
           style={{
             marginTop: 30,
@@ -124,9 +130,6 @@ class IndexPage extends React.Component {
             alignItems: 'center'
           }}
         >
-          {/* <Helmet>
-            <script type="text/javascript" src="//uprimp.com/slider.php?section=General&pub=727262&ga=g&side=random"></script>
-          </Helmet> */}
           <BasicProg />
           <BackEnd />
           <FrontEnd />

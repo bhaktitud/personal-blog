@@ -21,20 +21,23 @@ class About extends React.Component {
                   <div
                     style={{
                       display: 'flex',
-                      alignSelf: `center`,
+                      alignItems: `center`,
                       flexDirection: 'column',
                       width: `100%`
                     }}
                   >
-                      <h3><strong>Reach Out!</strong></h3>
+                      <h3><strong>Reach Me Out!</strong></h3>
                       <hr />
                       <form
+                          className='border shadow-lg rounded'
                           name="contact"
                           method="POST"
                           action="https://getform.io/f/52bb6a9d-2079-4bcf-b748-28752ed3a795" 
                           style={{
                               display: 'flex',
                               flexDirection: 'column',
+                              width: '80%',
+                              padding: '40px'
                           }}
                       >
 
@@ -58,9 +61,9 @@ class About extends React.Component {
                       width: '100%'
                     }}
                   >
-                    <h3><strong>Newsletter</strong></h3>
+                    {/* <h3><strong>Newsletter</strong></h3>
                     <hr />
-                    <iframe src="https://bhakti3c0.substack.com/embed" height="320" frameborder="0" scrolling="no"></iframe>
+                    <iframe src="https://bhakti3c0.substack.com/embed" height="320" frameborder="0" scrolling="no"></iframe> */}
                   </div>      
                 </div>
             </Layout>

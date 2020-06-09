@@ -54,27 +54,29 @@ class IndexPage extends React.Component {
           className='shadow-lg'
             style={{
               width: '100%',
-              backgroundColor: '#FF416C',
+              backgroundColor: 'hsl(195.69, 46.76%, 40.25%)',
               borderRadius: 20,
               display: `flex`,
               flexDirection: `row`,
               alignItems: `center`,
               justifyContent: `center`,
-              padding: 20
+              padding: 20,
             }}
           >
             <div
             >
-              <h1>
+              <h1
+                style={{ color: 'white' }}
+              >
                 Hi! I'm Bhakti{" "}
                 <span role="img" aria-label="wave emoji">
                   👋
                 </span>
               </h1>
-              <p>
+              <IntroString>
                 I am a <strong>Software Developer</strong>, currently love to write and share my knowledge to the open world!
                 I welcome You to my Personal Blog, mostly my articles contain tutorials, walkthrough and conceptual knowledge about Javascript Programming.
-              </p>
+              </IntroString>
               <div
                 style={{
                   display: `flex`,
@@ -134,4 +136,12 @@ class IndexPage extends React.Component {
   }
 }
 
+const IntroString = styled.p`
+  font-family: 'Acme', sans-serif;
+  color: white
+`
+
+
 export default IndexPage
+
+

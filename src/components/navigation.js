@@ -36,7 +36,7 @@ function Navigation() {
                             width: '150%'
                         }}
                     >   
-                        <Link style={{textDecoration: 'inherit', color: 'inherit', boxShadow: 'none', fontFamily: 'Black Ops One'}} className="mx-auto" to="/">BhaktiDev</Link>
+                        <Link style={{textDecoration: 'inherit', color: 'inherit', boxShadow: 'none', fontFamily: 'Black Ops One', textShadow: '0px 2px 5px #051937'}} className="mx-auto" to="/">BhaktiDev</Link>
                     </h3>
                     <small style={{marginLeft: '2%'}}>"Code for your life!"</small>
                 </div>

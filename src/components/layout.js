@@ -45,30 +45,33 @@ class Layout extends React.Component {
         >
           <Helmet>
             <script data-ad-client="ca-pub-1639440201559812" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
           </Helmet>
         <Navigation />
           <div
-          className='bg-light border rounded shadow-lg'
+          className='bg-light border rounded'
             style={{
               marginLeft: `auto`,
               marginRight: `auto`,
               maxWidth: rhythm(28),
               padding: `${rhythm(0.5)} ${rhythm(4 / 3.8)}`,
               marginTop: `2%`,
+              boxShadow: `0px 0px 60px 5px #0ff`
             }}
           >
 
             <main>{children}</main>
           </div>
-            <Footer
+          <Footer
               style={{
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
                 paddingTop: 5,
+                boxShadow: `0px 0px 20px 5px #0ff`
               }}
-              className="bg-light rounded border shadow-lg"
+              className="bg-light rounded border"
             >
               <h6>Bhakti Budiman Novanda, {new Date().getFullYear()}</h6>
               <div style={{display: 'flex', alignItems: 'center', flexDirection: 'row'}}>
@@ -87,9 +90,10 @@ class Layout extends React.Component {
 
 const Wrapper = styled.div`
   min-height: 100vh;
-  background: #FF416C;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // background: #FF416C;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+  background: hsl(200.87, 35.38%, 25.49%)
+  
 
 `
 

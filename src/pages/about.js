@@ -10,7 +10,11 @@ class About extends React.Component {
         return(
             <Layout location={this.props.location} title={siteTitle}>
                 <div
-                    style={{ margin: "20px 0 40px" }}
+                    style={{ 
+                      margin: "20px 0 40px" ,
+                      display: 'flex',
+                      flexDirection: 'column'
+                    }}
                 >
                     <h3><strong>About Me</strong></h3>
                     <div
@@ -49,6 +53,9 @@ class About extends React.Component {
                         </ul>
                     </div>
                     <hr />
+
+                <div style={{ alignSelf: 'center', marginTop: '20px' }} className="LI-profile-badge shadow-lg border rounded"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="bhaktibudimannovanda"></div>
+            
                 </div>
             </Layout>
         )

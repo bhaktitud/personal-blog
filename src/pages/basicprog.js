@@ -7,6 +7,7 @@ import Bio from '../components/bio'
 import Tags from '../components/tags'
 import { rhythm } from "../utils/typography"
 import styled from "styled-components"
+import Sidenav from "../components/sidenav"
 
 
 const PostCard = styled.div`
@@ -39,6 +40,9 @@ class BasicProgramming extends React.Component {
         <div style={{ marginTop: '5%' }}>
           <h4>Basic Programming ({posts.length})</h4>
         </div>
+        <div style={{marginTop: 25}}>
+          <Sidenav />
+        </div>
         <div style={{ margin: "50px 0 40px" }}>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
@@ -56,31 +60,38 @@ class BasicProgramming extends React.Component {
                   borderRadius: 5,
                 }}
               >
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
-                  <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-                    <img style={{marginRight: 10, padding: 0, marginBottom: 0}} src="https://img.icons8.com/carbon-copy/100/000000/book.png" alt="book" width='48'/>
-                    <Link
-                      style={{ boxShadow: `none`, textDecoration: `none`, color: 'inherit' }}
-                      to={`blog${node.fields.slug}`}
+                <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+                    {
+                      node.frontmatter.image ? 
+                      <img style={{marginRight: 10, padding: 10, marginBottom: 0}} src={require(`../${node.frontmatter.image}`)} width='64' /> :
+                      <img style={{marginRight: 10, padding: 0, marginBottom: 0}} src="https://img.icons8.com/carbon-copy/100/000000/book.png" alt="book" width='48'/>
+                    }
+                    <div
+                       style={{display: 'flex', flexDirection: 'column', alignItems: 'start'}}
                     >
-                      {title}
-                    </Link>
+                      <h3
+                        style={{
+                          marginBottom: rhythm(1 / 4),
+                        }}
+                      >
+                        <Link
+                          style={{ boxShadow: `none`, textDecoration: `none`, color: 'inherit' }}
+                          to={`blog${node.fields.slug}`}
+                        >
+                          {title}
+                        </Link>
+                      </h3>
+                      <div>
+                        <small><strong>{node.frontmatter.date}</strong></small>
+                        <p
+                          dangerouslySetInnerHTML={{
+                            __html: node.frontmatter.description || node.excerpt,
+                          }}
+                          style={{marginTop: 5}}
+                        />
+                      </div>
+                    </div>
                   </div>
-                </h3>
-                <div style={{marginLeft: 20}}>
-                <small>{node.frontmatter.date} </small>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: node.frontmatter.description || node.excerpt,
-                    }}
-                    style={{marginTop: 5}}
-                  />
-                  <small>Author: <strong>{author}</strong></small>
-                </div>
               </PostCard>
               </Link>
             )
@@ -119,6 +130,7 @@ export const pageQuery = graphql`
               title
               description
               tags
+              image
             }
           }
         }

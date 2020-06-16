@@ -101,6 +101,11 @@ class IndexPage extends React.Component {
               </div>
             </div>
           </div>
+        <AdsContainer>
+          <Advertisement href='//graizoah.com/afu.php?zoneid=3337519' target='_blank'>
+            <img src='https://firebasestorage.googleapis.com/v0/b/cloudstore-4cb34.appspot.com/o/Pale%20Dark%20Blue%20Bible%20Church%20Leaderboard%20(IAB).png?alt=media&token=23aae0b2-5251-4f0e-b918-dfdf4e41c151' alt='ads' />
+          </Advertisement>
+        </AdsContainer>
           <div
           className='border rounded shadow'
             style={{
@@ -108,7 +113,7 @@ class IndexPage extends React.Component {
               flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'center',
-              marginTop:'50px',
+              marginTop:'20px',
               width: '100%',
               padding: '20px'
             }}
@@ -144,6 +149,17 @@ const IntroString = styled.p`
   color: white
 `
 
+const Advertisement = styled.a`
+  text-decoration: none;
+  box-shadow: none;
+
+`
+const AdsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 10px
+`
 
 export default IndexPage
 

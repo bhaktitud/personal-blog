@@ -3,8 +3,13 @@ path: for-statement
 date: 2020-05-27T15:37:57.607Z
 title: For Statement
 description: A brief introduction to for statement in javascript
-tags: ["basic programming", "tutorial", "theory", "javascript"]
+tags:
+  - basic programming
+  - tutorial
+  - theory
+  - javascript
 likes: 0
+image: assets/hiclipart.com.png
 ---
 Hi, in this article we will talk about ***for statement*** in **Javascript**. According to the documentation, "a **for** loop repeats until specified condition evaluates to **false**", *\-developer.mozilla.org*.
 

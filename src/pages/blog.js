@@ -131,7 +131,7 @@ class Blog extends React.Component {
                   <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
                     {
                       node.frontmatter.image ? 
-                      <img style={{marginRight: 10, padding: 10, marginBottom: 0}} src={require(`./${node.frontmatter.image}`)} width='70rem' /> :
+                      <img style={{marginRight: 10, padding: 10, marginBottom: 0}} src={require(`../${node.frontmatter.image}`)} width='70rem' /> :
                       <img style={{marginRight: 10, padding: 0, marginBottom: 0}} src="https://img.icons8.com/carbon-copy/100/000000/book.png" alt="book" width='48'/>
                     }
                     <Link

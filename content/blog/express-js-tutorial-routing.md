@@ -3,6 +3,7 @@ path: express-js-routing
 date: 2020-06-03T07:44:58.177Z
 title: Express JS Tutorial (Routing)
 description: A tutorial on how to setting up your server routes
+image: assets/express.png
 tags:
   - back-end
   - javascript

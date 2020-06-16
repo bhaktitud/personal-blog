@@ -7,14 +7,14 @@ import styled from 'styled-components'
 function Navigation() {
 
     const NavText = styled.p`
-    &:hover{
+    :hover{
         transform: scale(1.1);
         transition: 0.1s;
       }
     `
 
     return (
-        <nav className="navbar navbar-expand-md navbar-light bg-light rounded border sticky-top shadow">
+        <nav className="navbar navbar-expand-md bg-white rounded border sticky-top shadow">
             <div className="mx-auto order-0" 
                 style={{
                     display: 'flex',
@@ -50,13 +50,19 @@ function Navigation() {
             <div className="navbar-collapse collapse w-100 order-3" id='navigationCollection'>
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                        <Link style={{boxShadow: 'none'}} className="nav-link" to="/blog/"><NavText>Articles</NavText></Link>
+                        <Link style={{boxShadow: 'none'}} className="nav-link" to="/blog/">
+                            <NavText className='btn btn-outline-secondary'>Articles</NavText>
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <Link style={{boxShadow: 'none'}} className="nav-link" to="/about/"><NavText>About</NavText></Link>
+                        <Link style={{boxShadow: 'none'}} className="nav-link" to="/about/">
+                            <NavText className='btn btn-outline-secondary'>About</NavText>
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <Link style={{boxShadow: 'none'}} className="nav-link" to="/contact/"><NavText>Contact</NavText></Link>
+                        <Link style={{boxShadow: 'none'}} className="nav-link" to="/contact/">
+                            <NavText className='btn btn-outline-secondary'>Contact</NavText>
+                        </Link>
                     </li>
                 </ul>
             </div>

@@ -107,7 +107,7 @@ class IndexPage extends React.Component {
           </Advertisement>
         </AdsContainer>
           <div
-          className='border rounded shadow'
+          className='bg-light rounded shadow'
             style={{
               display: 'flex',
               flexDirection: 'column',

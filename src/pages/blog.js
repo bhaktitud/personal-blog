@@ -60,7 +60,7 @@ class Blog extends React.Component {
                   borderRadius: 5
                 }}
               >
-                <h3
+                <h4
                   style={{
                     marginBottom: rhythm(1 / 4),
                   }}
@@ -68,7 +68,7 @@ class Blog extends React.Component {
                   <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
                     {
                       node.frontmatter.image ? 
-                      <img style={{marginRight: 10, padding: 10, marginBottom: 0}} src={require(`../${node.frontmatter.image}`)} width='70rem' /> :
+                      <img style={{marginRight: 10, padding: 10, marginBottom: 0}} src={require(`../${node.frontmatter.image}`)} width='48' /> :
                       <img style={{marginRight: 10, padding: 0, marginBottom: 0}} src="https://img.icons8.com/carbon-copy/100/000000/book.png" alt="book" width='48'/>
                     }
                     <Link
@@ -78,17 +78,10 @@ class Blog extends React.Component {
                       {title}
                     </Link>
                   </div>
-                </h3>
-                <div style={{marginLeft: 20}}>
-                <small>{node.frontmatter.date}</small>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: node.frontmatter.description || node.excerpt,
-                    }}
-                    style={{marginTop: 5}}
-                  />
-                  <small>Author: <strong>{author}</strong></small>
-                </div>
+                </h4>
+                    <div style={{marginLeft: 20}}>
+                      <small>{node.frontmatter.date}</small>
+                    </div>
               </PostCard>
               </Link>
             )

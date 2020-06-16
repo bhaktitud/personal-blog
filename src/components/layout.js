@@ -71,7 +71,7 @@ class Layout extends React.Component {
                 justifyContent: 'center',
                 paddingTop: 5,
               }}
-              className="bg-light shadow rounded border"
+              className="bg-light border"
             >
               <h6>Bhakti Budiman Novanda, {new Date().getFullYear()}</h6>
               <div style={{display: 'flex', alignItems: 'center', flexDirection: 'row'}}>

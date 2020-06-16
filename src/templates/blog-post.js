@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import { DiscussionEmbed } from "disqus-react"
+import Tags from "../components/tags"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -43,7 +44,11 @@ class BlogPostTemplate extends React.Component {
         >
           {post.frontmatter.date} · {post.fields.readingTime.text} 
         </p>
-        <MDXRenderer>{post.body}</MDXRenderer>
+        <MDXRenderer>{post.body}</MDXRenderer> 
+        
+        {!post.frontmatter.tags? 'no tags': post.frontmatter.tags.map((tag, index) => (
+                    <Tags key={index} className='tag'>{tag}{' '}</Tags>
+                ))} 
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -113,6 +118,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         image
+        tags
       }
     }
   }

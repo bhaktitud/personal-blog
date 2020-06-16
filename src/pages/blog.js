@@ -129,7 +129,11 @@ class Blog extends React.Component {
                   }}
                 >
                   <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-                    <img style={{marginRight: 10, padding: 0, marginBottom: 0}} src="https://img.icons8.com/carbon-copy/100/000000/book.png" alt="book" width='48'/>
+                    {
+                      node.frontmatter.image ? 
+                      <img style={{marginRight: 10, padding: 10, marginBottom: 0}} src={require(`../${node.frontmatter.image}`)} width='70rem' /> :
+                      <img style={{marginRight: 10, padding: 0, marginBottom: 0}} src="https://img.icons8.com/carbon-copy/100/000000/book.png" alt="book" width='48'/>
+                    }
                     <Link
                       style={{ boxShadow: `none`, textDecoration: `none`, color: 'inherit' }}
                       to={`blog${node.fields.slug}`}
@@ -139,9 +143,7 @@ class Blog extends React.Component {
                   </div>
                 </h3>
                 <div style={{marginLeft: 20}}>
-                <small>{node.frontmatter.date} {!node.frontmatter.tags? 'no tags': node.frontmatter.tags.map((tag, index) => (
-                    <Tags key={index} className='tag'>{tag}{' '}</Tags>
-                ))} </small>
+                <small>{node.frontmatter.date}</small>
                   <p
                     dangerouslySetInnerHTML={{
                       __html: node.frontmatter.description || node.excerpt,

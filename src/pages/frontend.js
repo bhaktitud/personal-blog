@@ -72,9 +72,7 @@ class FrontEnd extends React.Component {
                   </div>
                 </h3>
                 <div style={{marginLeft: 20}}>
-                <small>{node.frontmatter.date} {!node.frontmatter.tags? 'no tags': node.frontmatter.tags.map((tag, index) => (
-                    <Tags key={index} className='tag'>{tag}{' '}</Tags>
-                ))} </small>
+                <small>{node.frontmatter.date}</small>
                   <p
                     dangerouslySetInnerHTML={{
                       __html: node.frontmatter.description || node.excerpt,

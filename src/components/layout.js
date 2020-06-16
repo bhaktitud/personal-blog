@@ -12,6 +12,7 @@ const IconConnect = styled.img`
         transition: 0.1s;
       }
     `
+const contentWidth = 34;
 
 class Layout extends React.Component {
   
@@ -39,24 +40,22 @@ class Layout extends React.Component {
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
-            maxWidth: rhythm(28),
+            maxWidth: rhythm(contentWidth),
             padding: `${rhythm(1.5)} ${rhythm(1 / 4)}`
           }}
         >
           <Helmet>
-            <script data-ad-client="ca-pub-1639440201559812" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
           </Helmet>
         <Navigation />
           <div
-          className='bg-white border rounded'
+          className='bg-white border rounded shadow'
             style={{
               marginLeft: `auto`,
               marginRight: `auto`,
-              maxWidth: rhythm(28),
+              maxWidth: rhythm(contentWidth),
               padding: `${rhythm(0.5)} ${rhythm(4 / 3.8)}`,
               marginTop: `2%`,
-              boxShadow: `0px 0px 60px 5px #0ff`
             }}
           >
 
@@ -69,9 +68,8 @@ class Layout extends React.Component {
                 alignItems: 'center',
                 justifyContent: 'center',
                 paddingTop: 5,
-                boxShadow: `0px 0px 20px 5px #0ff`
               }}
-              className="bg-light rounded border"
+              className="bg-light shadow rounded border"
             >
               <h6>Bhakti Budiman Novanda, {new Date().getFullYear()}</h6>
               <div style={{display: 'flex', alignItems: 'center', flexDirection: 'row'}}>
@@ -92,7 +90,7 @@ const Wrapper = styled.div`
   min-height: 100vh;
   // background: #FF416C;  /* fallback for old browsers */
   // background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
-  background: hsl(200.87, 35.38%, 25.49%)
+  background: white
   
 
 `

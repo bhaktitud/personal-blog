@@ -2,8 +2,8 @@ import React from "react"
 
 const Tags = ({ children }) => (
     <span
+        className='badge badge-primary'
         style={{
-            border: '0.5px solid #aaaaaa',
             borderRadius: 5,
             padding: 5,
             marginLeft: 2

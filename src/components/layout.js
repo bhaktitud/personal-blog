@@ -38,31 +38,30 @@ class Layout extends React.Component {
     return (
       <Wrapper>
       <Navigation />
-        <div
+        {/* <div
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
             maxWidth: rhythm(contentWidth),
             padding: `${rhythm(1.5)} ${rhythm(1 / 4)}`
           }}
-        >
+        > */}
           <Helmet>
             <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
           </Helmet>
-          <div
-          className='bg-white border rounded shadow'
-            style={{
-              marginLeft: `auto`,
-              marginRight: `auto`,
-              maxWidth: rhythm(contentWidth),
-              padding: `${rhythm(0.5)} ${rhythm(4 / 3.8)}`,
-              marginTop: `2%`,
-            }}
-          >
-
-            <main>{children}</main>
-        </div>
-          </div>
+            <div
+            className='bg-white border rounded shadow'
+              style={{
+                marginLeft: `auto`,
+                marginRight: `auto`,
+                maxWidth: rhythm(contentWidth),
+                padding: `${rhythm(0.5)}`,
+                marginTop: `2%`,
+              }}
+            >
+              <main>{children}</main>
+            </div>
+          {/* </div> */}
           <Footer
               style={{
                 display: 'flex',

@@ -14,7 +14,7 @@ function Navigation() {
     `
 
     return (
-        <nav className="navbar navbar-expand-md bg-white rounded border sticky-top shadow">
+        <nav className="navbar navbar-expand-md bg-light navbar-light rounded border sticky-top shadow">
             <div className="mx-auto order-0" 
                 style={{
                     display: 'flex',

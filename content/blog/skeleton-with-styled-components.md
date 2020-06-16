@@ -1,7 +1,7 @@
 ---
 path: skeleton-loading-with-styled-components
 date: 2020-06-16T02:39:48.079Z
-title: Skeleton With Styled Components
+title: Skeleton Loading With Styled Components
 description: Tutorial on how to create a skeleton loading for your web app
 image: assets/skeleton.gif
 tags:

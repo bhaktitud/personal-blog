@@ -3,6 +3,7 @@ path: getting-start-with-express-js
 date: 2020-06-03T03:56:31.643Z
 title: Getting Start With Express JS
 description: A tutorial about how to build your very first server side by using express js
+image: assets/express.png
 tags:
   - back-end
   - tutorial

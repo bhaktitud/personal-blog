@@ -3,6 +3,7 @@ path: enumerating-object-in-javascript
 date: 2020-06-03T01:58:05.687Z
 title: Enumerating Object In Javascript
 description: An explanation on how to enumerate object literal in javascript
+image: assets/object-literal.png
 tags:
   - basic programming
   - tutorial

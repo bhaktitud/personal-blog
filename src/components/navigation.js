@@ -23,7 +23,7 @@ function Navigation() {
                 }}
             >
             <div className='d-flex flex-row align-items-center justify-content-center'>
-                <img src={require(`../assets/codejam.png`)} width='80' style={{marginRight: '5%', marginTop: '7%'}} />
+                <img src={require(`../assets/codejam.png`)} width='100' style={{marginRight: '5%', marginTop: '7%'}} />
                 <div
                     style={{
                         display: 'flex',

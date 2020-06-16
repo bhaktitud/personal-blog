@@ -7,6 +7,7 @@ import Bio from '../components/bio'
 import Tags from '../components/tags'
 import { rhythm } from "../utils/typography"
 import styled from "styled-components"
+import Sidenav from "../components/sidenav"
 
 
 const PostCard = styled.div`
@@ -40,71 +41,7 @@ class Blog extends React.Component {
           <h4>All Posts ({posts.length})</h4>
         </div>
         <div style={{marginTop: 25}}>
-          <ul
-            style={{
-              textDecoration: 'none',
-              listStyleType: 'none',
-              display: 'flex',
-              flexDirection: 'row',
-              alignItems: 'flex-start',
-              justifyContent: 'flex-start',
-            }}
-          >
-            <li className="small"
-              style={{
-                marginRight: 5
-              }}
-            >
-              <Tags>
-                <Link 
-                  style={{
-                    boxShadow: 'none',
-                    color: 'inherit',
-                    textDecoration: 'none',
-                  }}
-                  to='/basicprog/'
-                >
-                  Basic Programming
-                </Link>
-              </Tags>
-            </li>
-            <li className="small"
-              style={{
-                marginRight: 5
-              }}
-            >
-              <Tags>
-                <Link 
-                  style={{
-                    boxShadow: 'none',
-                    color: 'inherit',
-                    textDecoration: 'none'
-                  }}
-                  to='/backend/'
-                >
-                  Back-End
-                </Link>
-              </Tags>
-            </li>
-            <li className="small"
-              style={{
-                marginRight: 5
-              }}
-            >
-              <Tags>
-                <Link 
-                  style={{
-                    boxShadow: 'none',
-                    color: 'inherit',
-                    textDecoration: 'none'
-                  }}
-                  to='/frontend/'
-                >
-                  Front-End
-                </Link>
-              </Tags>
-            </li>
-          </ul>
+          <Sidenav />
         </div>
         <div style={{ margin: "50px 0 40px" }}>
           {posts.map(({ node }) => {

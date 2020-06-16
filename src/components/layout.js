@@ -4,6 +4,7 @@ import styled from "styled-components"
 import { rhythm, scale } from "../utils/typography"
 import Navigation from './navigation'
 import { Helmet } from "react-helmet"
+import Sidenav from "./sidenav"
 
 
 const IconConnect = styled.img`
@@ -36,6 +37,7 @@ class Layout extends React.Component {
 
     return (
       <Wrapper>
+      <Navigation />
         <div
           style={{
             marginLeft: `auto`,
@@ -47,7 +49,6 @@ class Layout extends React.Component {
           <Helmet>
             <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
           </Helmet>
-        <Navigation />
           <div
           className='bg-white border rounded shadow'
             style={{
@@ -60,6 +61,7 @@ class Layout extends React.Component {
           >
 
             <main>{children}</main>
+        </div>
           </div>
           <Footer
               style={{
@@ -80,7 +82,6 @@ class Layout extends React.Component {
               </div>
               <p className="has-line-data" data-line-start="0" data-line-end="1"><a href="https://app.netlify.com/sites/bhaktidev/deploys"><img src="https://api.netlify.com/api/v1/badges/b35e6d96-a7bb-4fbf-86b9-dad8fc3d4dde/deploy-status" alt="Netlify Status" /></a></p>
             </Footer>
-        </div>
       </Wrapper>
     )
   }

@@ -22,23 +22,26 @@ function Navigation() {
                     justifyContent: 'space-between'
                 }}
             >
+            <div className='d-flex flex-row align-items-center justify-content-center'>
+                <img src={require(`../assets/codejam.png`)} width='105rem' style={{marginRight: '5%', marginTop: '3%'}} />
                 <div
                     style={{
                         display: 'flex',
                         flexDirection: 'column',
                     }}
                 >
-                    <h3
-                        style={{
-                            ...scale(1),
-                            marginTop: 0,
-                            marginBottom: 0,
-                            width: '150%'
-                        }}
-                    >   
-                        <Link style={{textDecoration: 'inherit', color: 'inherit', boxShadow: 'none', fontFamily: 'Black Ops One', textShadow: '0px 2px 5px #051937'}} className="mx-auto" to="/">BhaktiDev</Link>
-                    </h3>
+                        <h3
+                            style={{
+                                ...scale(1),
+                                marginTop: 0,
+                                marginBottom: 0,
+                                width: '150%'
+                            }}
+                        >   
+                            <Link style={{textDecoration: 'inherit', color: 'inherit', boxShadow: 'none', fontFamily: 'Black Ops One', textShadow: '0px 2px 5px #051937'}} className="mx-auto" to="/">BhaktiDev</Link>
+                        </h3>
                     <small style={{marginLeft: '2%'}}>"Code for your life!"</small>
+                    </div>
                 </div>
             </div>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationCollection">

@@ -34,9 +34,9 @@ class Blog extends React.Component {
           <div>
             <h4>All Posts ({posts.length})</h4>
           </div>
-          <div style={{marginTop: 25}}>
+          {/* <div style={{marginTop: 25}}>
             <Sidenav />
-          </div>
+          </div> */}
           <div style={{ margin: "50px 0 40px" }}>
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug

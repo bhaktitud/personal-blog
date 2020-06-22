@@ -33,9 +33,9 @@ class FrontEnd extends React.Component {
           <div>
             <h4>Front-End Development ({posts.length})</h4>
           </div>
-          <div style={{marginTop: 25}}>
+          {/* <div style={{marginTop: 25}}>
             <Sidenav />
-          </div>
+          </div> */}
           <div style={{ margin: "20px 0 20px" }}>
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug

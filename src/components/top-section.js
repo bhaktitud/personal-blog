@@ -8,14 +8,16 @@ export const TopSection = () => {
     return (
         <div className='Container'>
             <div className='Greeting'>
-                <Typist className='name-greetings'>
-                    <strong>
-                        Hi! I'm Bhakti{" "}
-                    </strong>
-                        <span role="img" aria-label="wave emoji">
-                        👋 <strong>... Welcome</strong>
-                        </span>
+                    <h5 className='name-greetings'>
+                <Typist>
+                        <strong>
+                            Hi! I'm Bhakti{" "}
+                        </strong>
+                            <span role="img" aria-label="wave emoji">
+                            👋 <strong>... Welcome</strong>
+                            </span>
                 </Typist>
+                    </h5>
                 <Typist
                     startDelay={4000}
                     className="section-options"

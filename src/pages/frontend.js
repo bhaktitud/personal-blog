@@ -44,7 +44,7 @@ class FrontEnd extends React.Component {
                 <AniLink
                   fade
                   style={{ boxShadow: `none`, textDecoration: `none`, color: 'inherit' }}
-                  to={`blog${node.fields.slug}`}
+                  to={`${node.fields.slug}`}
                 >
                 <PostCard 
                   className='card' key={node.fields.slug} 
@@ -67,13 +67,7 @@ class FrontEnd extends React.Component {
                             marginBottom: rhythm(1 / 4),
                           }}
                         >
-                        <AniLink
-                          fade
-                          style={{ boxShadow: `none`, textDecoration: `none`, color: 'inherit' }}
-                          to={`blog${node.fields.slug}`}
-                        >
-                            {title}
-                          </AniLink>
+                          {title}
                         </h3>
                         <div>
                           <small><strong>{node.frontmatter.date}</strong></small>

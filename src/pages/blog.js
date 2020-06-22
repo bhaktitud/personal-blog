@@ -44,7 +44,7 @@ class Blog extends React.Component {
               return (
                 <Link
                   style={{ boxShadow: `none`, textDecoration: `none`, color: 'inherit' }}
-                  to={`${node.fields.slug}`}
+                  to={`blog${node.fields.slug}`}
                 >
                 <PostCard 
                   className='card' key={node.fields.slug} 
@@ -67,12 +67,7 @@ class Blog extends React.Component {
                             marginBottom: rhythm(1 / 4),
                           }}
                         >
-                          <Link
-                            style={{ boxShadow: `none`, textDecoration: `none`, color: 'inherit' }}
-                            to={`${node.fields.slug}`}
-                          >
-                            {title}
-                          </Link>
+                          {title}
                         </h3>
                         <div>
                           <small><strong>{node.frontmatter.date}</strong></small>

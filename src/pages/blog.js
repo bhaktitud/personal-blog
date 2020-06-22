@@ -43,7 +43,6 @@ class Blog extends React.Component {
               const image = node.frontmatter.image
               return (
                 <AniLink
-                  fade
                   style={{ boxShadow: `none`, textDecoration: `none`, color: 'inherit' }}
                   to={`blog${node.fields.slug}`}
                 >
@@ -69,7 +68,6 @@ class Blog extends React.Component {
                           }}
                         >
                           <AniLink
-                            fade
                             style={{ boxShadow: `none`, textDecoration: `none`, color: 'inherit' }}
                             to={`blog${node.fields.slug}`}
                           >

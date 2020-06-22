@@ -42,7 +42,7 @@ class Blog extends React.Component {
               const title = node.frontmatter.title || node.fields.slug
               const image = node.frontmatter.image
               return (
-                <AniLink
+                <Link
                   style={{ boxShadow: `none`, textDecoration: `none`, color: 'inherit' }}
                   to={`blog${node.fields.slug}`}
                 >
@@ -67,12 +67,12 @@ class Blog extends React.Component {
                             marginBottom: rhythm(1 / 4),
                           }}
                         >
-                          <AniLink
+                          <Link
                             style={{ boxShadow: `none`, textDecoration: `none`, color: 'inherit' }}
                             to={`blog${node.fields.slug}`}
                           >
                             {title}
-                          </AniLink>
+                          </Link>
                         </h3>
                         <div>
                           <small><strong>{node.frontmatter.date}</strong></small>
@@ -86,7 +86,7 @@ class Blog extends React.Component {
                       </div>
                     </div>
                 </PostCard>
-                </AniLink>
+                </Link>
               )
             })}
           </div>

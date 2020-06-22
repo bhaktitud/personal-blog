@@ -8,6 +8,8 @@ import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import { DiscussionEmbed } from "disqus-react"
 import Tags from "../components/tags"
+import './blog-post.css'
+import '../pages/blog.css'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -26,69 +28,70 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h1
-          style={{
-            marginTop: rhythm(1)
-          }}
-        >
-          {post.frontmatter.title}
-        </h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-0.5),
-            marginLeft: rhythm(0.2)
-          }}
-        >
-          {post.frontmatter.date} · {post.fields.readingTime.text} 
-        </p>
-        <MDXRenderer>{post.body}</MDXRenderer> 
-        
-        {!post.frontmatter.tags? 'no tags': post.frontmatter.tags.map((tag, index) => (
-                    <Tags key={index} className='tag'>{tag}{' '}</Tags>
-                ))} 
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
-        <div
-          className="bg-light border rounded"
-          style={{
-            padding: 10,
-            margin: 10
-          }}
-        >
-          <Bio />
-        </div>
+        <div className='container'>
 
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={`blog${previous.fields.slug}`} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={`blog${next.fields.slug}`} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-        <DiscussionEmbed {...disqusConfig} />
+          <div className='post-container'>
+            <h1>
+              {post.frontmatter.title}
+            </h1>
+            <p
+              style={{
+                ...scale(-1 / 5),
+                display: `block`,
+                marginBottom: rhythm(1),
+                marginLeft: rhythm(0.2)
+              }}
+            >
+              {post.frontmatter.date} · {post.fields.readingTime.text} 
+            </p>
+            <MDXRenderer>{post.body}</MDXRenderer> 
+            <div>
+              {!post.frontmatter.tags? 'no tags': post.frontmatter.tags.map((tag, index) => (
+                          <Tags key={index} className='tag'>{tag}{' '}</Tags>
+                      ))} 
+            </div>
+            <hr
+              style={{
+                marginBottom: rhythm(1),
+              }}
+            />
+            <div
+              className="bg-light border rounded"
+              style={{
+                padding: 10,
+                margin: 10
+              }}
+            >
+              <Bio />
+            </div>
+
+            <ul
+              style={{
+                display: `flex`,
+                flexWrap: `wrap`,
+                justifyContent: `space-between`,
+                listStyle: `none`,
+                padding: 0,
+              }}
+            >
+              <li>
+                {previous && (
+                  <Link to={`blog${previous.fields.slug}`} rel="prev">
+                    ← {previous.frontmatter.title}
+                  </Link>
+                )}
+              </li>
+              <li>
+                {next && (
+                  <Link to={`blog${next.fields.slug}`} rel="next">
+                    {next.frontmatter.title} →
+                  </Link>
+                )}
+              </li>
+            </ul>
+            <DiscussionEmbed {...disqusConfig} />
+          </div>
+        </div>
       </Layout>
     )
   }
@@ -119,6 +122,7 @@ export const pageQuery = graphql`
         description
         image
         tags
+        path
       }
     }
   }

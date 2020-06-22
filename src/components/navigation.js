@@ -1,20 +1,13 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import { scale } from "../utils/typography"
 import styled from 'styled-components'
 
 function Navigation() {
 
-    const NavText = styled.p`
-    :hover{
-        transform: scale(1.1);
-        transition: 0.1s;
-      }
-    `
-
     return (
-        <nav className="navbar navbar-expand-md bg-light navbar-light rounded border sticky-top shadow">
+        <nav className="navbar navbar-expand-md bg-white navbar-light sticky-top">
             <div className="mx-auto order-0" 
                 style={{
                     display: 'flex',
@@ -38,7 +31,7 @@ function Navigation() {
                                 width: '150%'
                             }}
                         >   
-                            <Link style={{textDecoration: 'inherit', color: 'inherit', boxShadow: 'none', fontFamily: 'Black Ops One', textShadow: '0px 2px 5px #051937'}} className="mx-auto" to="/">BhaktiDev</Link>
+                            <AniLink paintDrip hex="#141614" style={{textDecoration: 'inherit', color: 'inherit', boxShadow: 'none', fontFamily: 'Black Ops One'}} className="mx-auto" to="/">BhaktiDev</AniLink>
                         </h3>
                     <small style={{marginLeft: '2%'}}>"Code for your life!"</small>
                     </div>
@@ -50,19 +43,19 @@ function Navigation() {
             <div className="navbar-collapse collapse w-100 order-3" id='navigationCollection'>
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                        <Link style={{boxShadow: 'none'}} className="nav-link" to="/blog/">
-                            <NavText className='btn btn-outline-secondary'>Articles</NavText>
-                        </Link>
+                        <AniLink paintDrip hex="#141614" style={{boxShadow: 'none'}} className="nav-link" to="/blog/">
+                            <NavText className='btn btn-outline-info'>Articles</NavText>
+                        </AniLink>
                     </li>
                     <li className="nav-item">
-                        <Link style={{boxShadow: 'none'}} className="nav-link" to="/about/">
-                            <NavText className='btn btn-outline-secondary'>About</NavText>
-                        </Link>
+                        <AniLink paintDrip hex="#141614" style={{boxShadow: 'none'}} className="nav-link" to="/about/">
+                            <NavText className='btn btn-outline-info'>About</NavText>
+                        </AniLink>
                     </li>
                     <li className="nav-item">
-                        <Link style={{boxShadow: 'none'}} className="nav-link" to="/contact/">
-                            <NavText className='btn btn-outline-secondary'>Contact</NavText>
-                        </Link>
+                        <AniLink paintDrip hex="#141614" style={{boxShadow: 'none'}} className="nav-link" to="/contact/">
+                            <NavText className='btn btn-outline-info'>Contact</NavText>
+                        </AniLink>
                     </li>
                 </ul>
             </div>
@@ -71,5 +64,12 @@ function Navigation() {
     )
 }
 
+
+const NavText = styled.p`
+:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+  }
+`
 
 export default Navigation

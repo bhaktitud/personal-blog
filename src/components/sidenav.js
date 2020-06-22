@@ -1,6 +1,7 @@
 import React from 'react'
 import Tags from './tags'
 import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 
 const Sidenav = () => {
@@ -21,7 +22,8 @@ const Sidenav = () => {
               }}
             >
               <Tags>
-                <Link 
+                <AniLink
+                fade 
                   style={{
                     boxShadow: 'none',
                     color: 'inherit',
@@ -30,7 +32,7 @@ const Sidenav = () => {
                   to='/basicprog/'
                 >
                   Basic Programming
-                </Link>
+                </AniLink>
               </Tags>
             </li>
             <li className="h6"
@@ -39,7 +41,8 @@ const Sidenav = () => {
               }}
             >
               <Tags>
-                <Link 
+                <AniLink
+                fade 
                   style={{
                     boxShadow: 'none',
                     color: 'inherit',
@@ -48,7 +51,7 @@ const Sidenav = () => {
                   to='/backend/'
                 >
                   Back-End
-                </Link>
+                </AniLink>
               </Tags>
             </li>
             <li className="h6"
@@ -57,7 +60,8 @@ const Sidenav = () => {
               }}
             >
               <Tags>
-                <Link 
+                <AniLink
+                fade 
                   style={{
                     boxShadow: 'none',
                     color: 'inherit',
@@ -66,7 +70,7 @@ const Sidenav = () => {
                   to='/frontend/'
                 >
                   Front-End
-                </Link>
+                </AniLink>
               </Tags>
             </li>
           </ul>

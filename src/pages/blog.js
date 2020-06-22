@@ -4,10 +4,11 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Bio from '../components/bio'
-import Tags from '../components/tags'
 import { rhythm } from "../utils/typography"
 import styled from "styled-components"
 import Sidenav from "../components/sidenav"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+import './blog.css'
 
 
 const PostCard = styled.div`
@@ -29,75 +30,69 @@ class Blog extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        <div
-          style={{
-            marginTop: '5%'
-          }}
-        >
-          <Bio />
-        </div>
-        <hr />
-        <div style={{ marginTop: '5%' }}>
-          <h4>All Posts ({posts.length})</h4>
-        </div>
-        <div style={{marginTop: 25}}>
-          <Sidenav />
-        </div>
-        <div style={{ margin: "50px 0 40px" }}>
-          {posts.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
-            const image = node.frontmatter.image
-            const readingTime = node.fields.readingTime.text
-            return (
-              <Link
-              style={{ boxShadow: `none`, textDecoration: `none`, color: 'inherit' }}
-              to={`blog${node.fields.slug}`}
-              >
-              <PostCard 
-                className='card' key={node.fields.slug} 
-                style={{ 
-                  marginBottom: 20, 
-                  borderRadius: 5
-                }}
-              >
-                  <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-                    {
-                      node.frontmatter.image ? 
-                      <img style={{marginRight: 10, padding: 10, marginBottom: 0}} src={require(`../${node.frontmatter.image}`)} width='64' /> :
-                      <img style={{marginRight: 10, padding: 0, marginBottom: 0}} src="https://img.icons8.com/carbon-copy/100/000000/book.png" alt="book" width='48'/>
-                    }
-                    <div
-                       style={{display: 'flex', flexDirection: 'column', alignItems: 'start'}}
-                    >
-                      <h3
-                        style={{
-                          marginBottom: rhythm(1 / 4),
-                        }}
+        <div className='posts-list-container'>
+          <div>
+            <h4>All Posts ({posts.length})</h4>
+          </div>
+          <div style={{marginTop: 25}}>
+            <Sidenav />
+          </div>
+          <div style={{ margin: "50px 0 40px" }}>
+            {posts.map(({ node }) => {
+              const title = node.frontmatter.title || node.fields.slug
+              const image = node.frontmatter.image
+              return (
+                <AniLink
+                  fade
+                  style={{ boxShadow: `none`, textDecoration: `none`, color: 'inherit' }}
+                  to={`blog${node.fields.slug}`}
+                >
+                <PostCard 
+                  className='card' key={node.fields.slug} 
+                  style={{ 
+                    marginBottom: 20, 
+                    borderRadius: 5
+                  }}
+                >
+                    <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+                      {
+                        node.frontmatter.image ? 
+                        <img style={{marginRight: 10, padding: 10, marginBottom: 0}} src={require(`../${node.frontmatter.image}`)} width='64' /> :
+                        <img style={{marginRight: 10, padding: 0, marginBottom: 0}} src="https://img.icons8.com/carbon-copy/100/000000/book.png" alt="book" width='48'/>
+                      }
+                      <div
+                        style={{display: 'flex', flexDirection: 'column', alignItems: 'start'}}
                       >
-                        <Link
-                          style={{ boxShadow: `none`, textDecoration: `none`, color: 'inherit' }}
-                          to={`blog${node.fields.slug}`}
-                        >
-                          {title}
-                        </Link>
-                      </h3>
-                      <div>
-                        <small><strong>{node.frontmatter.date}</strong></small>
-                        <p
-                          dangerouslySetInnerHTML={{
-                            __html: node.frontmatter.description || node.excerpt,
+                        <h3
+                          style={{
+                            marginBottom: rhythm(1 / 4),
                           }}
-                          style={{marginTop: 5}}
-                        />
+                        >
+                          <AniLink
+                            fade
+                            style={{ boxShadow: `none`, textDecoration: `none`, color: 'inherit' }}
+                            to={`blog${node.fields.slug}`}
+                          >
+                            {title}
+                          </AniLink>
+                        </h3>
+                        <div>
+                          <small><strong>{node.frontmatter.date}</strong></small>
+                          <p
+                            dangerouslySetInnerHTML={{
+                              __html: node.frontmatter.description || node.excerpt,
+                            }}
+                            style={{marginTop: 5}}
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
-              </PostCard>
-              </Link>
-            )
-          })}
+                </PostCard>
+                </AniLink>
+              )
+            })}
+          </div>
         </div>
-        <hr />
       </Layout>
     )
   }

@@ -2,6 +2,7 @@ import React from 'react'
 
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import './blog.css'
 
 class About extends React.Component {
     render() {
@@ -9,62 +10,26 @@ class About extends React.Component {
         const siteTitle = data.site.siteMetadata.title
         return(
             <Layout location={this.props.location} title={siteTitle}>
-                <div
-                  style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'flex-start',
-                    justifyContent: 'center',
-                    marginTop: '2%'
-                  }}
-                >
-                  <div
-                    style={{
-                      display: 'flex',
-                      alignItems: `center`,
-                      flexDirection: 'column',
-                      width: `100%`
-                    }}
-                  >
+                <div className='container'>
                       <h3><strong>Reach Me Out!</strong></h3>
-                      <hr />
                       <form
-                          className='border shadow-lg rounded'
+                          className='contact-form'
                           name="contact"
                           method="POST"
                           action="https://getform.io/f/52bb6a9d-2079-4bcf-b748-28752ed3a795" 
-                          style={{
-                              display: 'flex',
-                              flexDirection: 'column',
-                              width: '80%',
-                              padding: '40px'
-                          }}
                       >
 
-                          <label for="fname">First Name</label>
-                          <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+                          <label className='label-input-style' name="fname">First Name</label>
+                          <input className='input-style' type="text" id="fname" name="firstname" placeholder="Your name.." />
                           
-                          <label for="email">Email</label>
-                          <input type="email" id="email" name="email" placeholder="Your email address.." />
+                          <label className='label-input-style' name="email">Email</label>
+                          <input className='input-style' type="email" id="email" name="email" placeholder="Your email address.." />
 
-                          <label for="subject">Subject / Question</label>
-                          <textarea id="subject" name="subject" placeholder="Write something.." style={{height:"200px"}}></textarea>
+                          <label className='label-input-style' name="subject">Subject / Question</label>
+                          <textarea className='input-style' id="subject" name="subject" placeholder="Write something.." style={{height:"200px"}}></textarea>
 
                           <button className="btn btn-primary" type="submit" style={{marginTop: 5}}>Submit</button>
                       </form>
-                  </div>
-                  <div
-                    style={{
-                      display: 'flex',
-                      alignSelf: `center`,
-                      flexDirection: 'column',
-                      width: '100%'
-                    }}
-                  >
-                    {/* <h3><strong>Newsletter</strong></h3>
-                    <hr />
-                    <iframe src="https://bhakti3c0.substack.com/embed" height="320" frameborder="0" scrolling="no"></iframe> */}
-                  </div>      
                 </div>
             </Layout>
         )

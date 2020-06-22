@@ -44,7 +44,7 @@ class Blog extends React.Component {
               return (
                 <Link
                   style={{ boxShadow: `none`, textDecoration: `none`, color: 'inherit' }}
-                  to={`blog${node.fields.slug}`}
+                  to={`${node.fields.slug}`}
                 >
                 <PostCard 
                   className='card' key={node.fields.slug} 
@@ -69,7 +69,7 @@ class Blog extends React.Component {
                         >
                           <Link
                             style={{ boxShadow: `none`, textDecoration: `none`, color: 'inherit' }}
-                            to={`blog${node.fields.slug}`}
+                            to={`${node.fields.slug}`}
                           >
                             {title}
                           </Link>
